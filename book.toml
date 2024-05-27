@@ -1,0 +1,6 @@
+[book]
+authors = ["Parker Lamb"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Manatash Ridge Observatory Documentation"

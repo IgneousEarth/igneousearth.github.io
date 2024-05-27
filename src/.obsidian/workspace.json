@@ -1,0 +1,170 @@
+{
+  "main": {
+    "id": "c4dfee102c31c7e9",
+    "type": "split",
+    "children": [
+      {
+        "id": "df99f79bdb445a79",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "14f2da39ce4b04e5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "telescope_setup.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "669eb3807abe401e",
+    "type": "split",
+    "children": [
+      {
+        "id": "3e5331f2fad8a96e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cc43ef1b155acb56",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "853e29025f4c3266",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b52a871b3f5390c3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "eb36683b8ad8ccf0",
+    "type": "split",
+    "children": [
+      {
+        "id": "01674705e3b41e76",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a124a6bc69aa4658",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "telescope_setup.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ee49ce2c670a886f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "telescope_setup.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1a0bb115c796c670",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e5465ba6c7c6effd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "telescope_setup.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "14f2da39ce4b04e5",
+  "lastOpenFiles": [
+    "checklist.md",
+    "SUMMARY.md",
+    "telescope_setup.md",
+    "images/bias_example.png",
+    "images",
+    "trips/images/images",
+    "trips/may24may25.md",
+    "resources.md",
+    "trips/Untitled.md",
+    "trips/images/clean_2s.png",
+    "trips/images/dirty_2s.png",
+    "trips/images/PXL_20240525_205159041.jpg",
+    "trips/images/PXL_20240525_205004684.jpg",
+    "trips/images/masterfilter-may2425.png",
+    "trips/images",
+    "OBS-INFO",
+    "OBS",
+    "IN"
+  ]
+}
