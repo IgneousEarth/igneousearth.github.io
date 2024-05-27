@@ -1,2 +1,5 @@
 book
+
+# ignore local configs
 .DS_Store
+src/.obsidian
