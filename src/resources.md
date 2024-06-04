@@ -6,4 +6,4 @@
 
 ### Misc
 
-[Git cheat sheet](https://wizardzines.com/git-cheat-sheet.pdf) - really lovely design, covers most use cases
+[Git cheat sheet](https://wizardzines.com/git-cheat-sheet.pdf) - really lovely design, covers most use cases 
