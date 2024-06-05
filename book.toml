@@ -3,7 +3,32 @@ authors = ["Parker Lamb"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Manatash Ridge Observatory Documentation"
+title = "UW Notes & Docs"
 
 [output.html]
+no-section-label = true
+mathjax-support = true
 default-theme = "rust"
+preferred-dark-theme = "rust"
+site-url = "https://igneousearth.github.io"
+
+[preprocessor.katex]
+after = ["links"]
+
+# [output.pandoc.code]
+# # Display hidden lines in code blocks (e.g., lines in Rust blocks prefixed by '#').
+# # See https://rust-lang.github.io/mdBook/format/mdbook.html?highlight=hidden#hiding-code-lines
+# show-hidden-lines = false
+
+# [output.pandoc.profile.tectonic] # options to pass to Pandoc (see https://pandoc.org/MANUAL.html#defaults-files)
+# output-file = "output.pdf" # output file (within the profile's build directory)
+# to = "latex" # output format
+
+# # PDF-specific settings
+# pdf-engine = "tectonic" # engine to use to produce PDF output
+
+# # `mdbook-pandoc` overrides Pandoc's defaults for the following options to better support mdBooks
+# file-scope = true # parse each file individually before combining
+# number-sections = false # number sections headings
+# standalone = false # produce output with an appropriate header and footer
+# table-of-contents = false # include an automatically generated table of contents

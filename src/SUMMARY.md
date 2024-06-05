@@ -1,11 +1,17 @@
 # Summary
 
-[Checklist](checklist.md)
+# UW MRO Docs
 
-[Setup & Calibration](telescope_setup.md)
+- [Checklist](mro/checklist.md)
 
-[Resources](resources.md)
+- [Setup & Calibration](mro/telescope_setup.md)
 
-# Trip Logs
+- [Resources](mro/resources.md)
 
-- [05/24 - 05/25](trips/may24may25.md)
+# UW MRO Trip Logs
+
+- [05/24 - 05/25](mro/trips/may24may25.md)
+
+# Projects
+
+- [Using the PIC16F88 as an I2C device](projects/pic16f88.md)
