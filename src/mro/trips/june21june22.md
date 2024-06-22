@@ -10,6 +10,8 @@ Oliver, Carter, Bruce, Maggie, Daniel, Thomas, Ruby, Parker, Anika
 
 Arrived to observatory around 3:30 PM - after tour we made (slightly undercooked :( ) baked potatoes on the grill as well as beans / guac - ended up acceptably tasty.
 
+Set up audio server to allow AirPlay, Spotify Play and Bluetooth - see below.
+
 Around 11:00 PM started observatory setup.
 
 - Sleipnir didn't boot for a long time - see details below. 
@@ -39,3 +41,9 @@ Sleipnir was acting slower than usual - ironically named. Boot hung up on someth
 To test whether the bottleneck was software or hardware, installed another distro alongside `ubuntu` - shrunk `ubuntu` disk 100 gigabytes and installed `manjaro` on it. Note - boot drive backup made at `/home/mrouser/.backup` just in case.
 
 **Results**: Manjaro booted much faster, but still some of the same slow speeds persisted, even with no services running - so I bet it's hardware. Hard drive is a Toshiba MQ01ACF050 - 7200 rpm, Pentium 4 processor.
+
+## Audio Server
+
+Set up an audio server connected to the 3.5mm jack on the vinyl-amp-thing - it supports connections via Bluetooth, AirPlay and Spotify Play, and can be further configured at [http://audio](http://audio). 
+
+As it runs on a Raspberry Pi, make sure the little black box with the fan is powered on and shows a red / green lights - if you run into any issues just restart it. 
