@@ -11,6 +11,7 @@
 # UW MRO Trip Logs
 
 - [05/24 - 05/25](mro/trips/may24may25.md)
+- [06/21 - 06/22](mro/trips/june21june22.md)
 
 # Projects
 
