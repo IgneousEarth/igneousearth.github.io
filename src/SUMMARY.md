@@ -3,9 +3,7 @@
 # UW MRO Docs
 
 - [Checklist](mro/checklist.md)
-
 - [Setup & Calibration](mro/telescope_setup.md)
-
 - [Resources](mro/resources.md)
 
 # UW MRO Trip Logs
