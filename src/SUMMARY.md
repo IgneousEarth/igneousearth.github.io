@@ -15,3 +15,7 @@
 # Projects
 
 - [Using the PIC16F88 as an I2C device](projects/pic16f88.md)
+
+# PHYS225 Notes
+
+- [Chapter 1 - Stern-Gerlach Experiments](notes/phys225/chapter1.md)
