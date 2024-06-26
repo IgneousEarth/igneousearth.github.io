@@ -54,7 +54,13 @@ Wait till sunset now.
 | **Flat**       | Help mitigate effect of dust and lens vingetting on lights - also acts as per-pixel correction factor. | 1-50        | ~50                 | Every run       |
 | **Dark**       | Try to capture noise from temp and ISO over length of exposure time.                                   | LIGHTs      | At least 5, ~20/exp | Every new exp   |
 
-**Notes**:
-- Bias frames are filter-irrelevant
-- Flat frames are filter-specific - 1 every 5 exptime steps should work
-- Rerun darks every once in a while  - build a library with ISO, temp and exptime
+**Filter notes**:
+- Bias frames are filter-irrelevant.
+- Flat frames are filter-specific - 1 every 5 exptime steps should work.
+- Rerun darks every once in a while  - build a library with ISO, temp and exptime.
+- For **sky flats**, take them when sky is as bright (twilight) as possible with least sensitive filter, tracking on, with some offset between each exposure ... OR ... no tracking and allow startrails.
+	- Allows for variations in star intensities (i.e. frame 1 has a bright star, frame 2 only dark stars)
+
+**Telescope notes**:
+- `Bifrost` does **NOT** record airmass in FITs header ... nor UTC or RA or DEC. 
+- The MRO telescope will start to create "footballs" at ~12-15 minutes due to imperfect tracking - we could better this with a "real" pointing module. 

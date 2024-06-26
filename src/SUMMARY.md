@@ -18,3 +18,7 @@
 # PHYS225 Notes
 
 - [Chapter 1 - Stern-Gerlach Experiments](notes/phys225/chapter1.md)
+
+# ASTR481 Notes
+
+- [Airmass & Extinction](notes/astr481/extinction.md)
