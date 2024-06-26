@@ -136,3 +136,32 @@ then, generally speaking,
 $$\braket{a_i|a_j}=\delta_{ij}$$
 $$\ket{\psi}=\sum_i \braket{a_i|\psi}\ket{a_i}$$
 > **Note**: $\braket{a_i|\psi}$ represents each corresponding complex scalar multiple, and $\delta_{ij}$ is the **Kronecker delta**, which is 1 if $i=j$ and 0 if $i\neq j$. 
+
+## Converting kets between axes
+
+We can represent up-down spin measurements in $x$ and $y$ in terms of our $z$-spin kets, such that
+
+$$\ket{+}_z\qquad \ket{+}_x = \frac{1}{\sqrt{2}}\left[\ket{+}+\ket{-}\right]\qquad \ket{+}_y=\frac{1}{\sqrt{2}}[\ket{+}+i\ket{-}]$$
+$$\ket{-}_z\qquad \ket{-}_x = \frac{1}{\sqrt{2}}\left[\ket{+}-\ket{-}\right]\qquad \ket{-}_y=\frac{1}{\sqrt{2}}[\ket{+}-i\ket{-}]$$
+In matrix form,
+$$\ket{+}_z \equiv \begin{pmatrix}1 \\ 0\end{pmatrix}\qquad \ket{+}_x \equiv \frac{1}{\sqrt{2}}\begin{pmatrix}1 \\ 1\end{pmatrix} \qquad \ket{+}_y \equiv \frac{1}{\sqrt{2}}\begin{pmatrix}1 \\ i\end{pmatrix}$$
+$$\ket{-}_z \equiv \begin{pmatrix}0 \\ 1\end{pmatrix}\qquad \ket{-}_x \equiv \frac{1}{\sqrt{2}}\begin{pmatrix}1 \\ -1\end{pmatrix} \qquad \ket{-}_y \equiv \frac{1}{\sqrt{2}}\begin{pmatrix}1 \\ -i\end{pmatrix}$$
+
+## The Postulates of Quantum Mechanics
+
+> **Postulate 1**: the state of a quantum mechanical system, $\ket{\psi}$, contains everything we can mathematically know about it - experimentally, the [hidden variables theory](https://en.wikipedia.org/wiki/Hidden-variable_theory) (regardless of validity) is irrelevant (since the variables are by definition hidden.)
+
+> **Postulate 2**: Physical observables (such as spin) are represented mathematically by some operator $A$ that operates on kets. 
+
+> **Postulate 3**: The only results possible from a measurement are contained in the set of eigenvalues $[a_1,a_2\ldots a_n]$ of the operator $A$. 
+
+> **Postulate 4**: The possibility of *obtaining* some eigenvalue $a_n$ in a measurement of the observable $A$ on the system $\ket{\psi}$ is g
+> $$\mathcal{P}_{a_n}=|\braket{a_n|\psi}|^2$$
+
+> **Postulate 5**: After a measurement of $A$ (such as spin) that yields some result $a_n$ (such as $+$), the quantum system is in a new state that is a normalized projection of the original system ket $\ket{\psi}$ onto the ket (or kets) corresponding to the *result* of the measurement $\ket{\psi'}$
+> $$\ket{\psi'}=\frac{P_n\ket{\psi}}{\sqrt{\braket{\psi|P_n|\psi}}}$$
+
+> **Postulate 6**: The time evolution of a quantum system is determined by the *Hamiltonian*, or *total energy operator* $H(t)$ via the Schrödinger equation
+> $$i\hbar\frac{d}{dt}\ket{\psi(t)}=H(t)\ket{\psi(t)}$$
+
+**Note**: only postulates 1 and 2 were covered in this chapter. 
