@@ -13,12 +13,14 @@
 
 # Projects
 
-- [Using the PIC16F88 as an I2C device](projects/pic16f88.md)
+- [Using the PIC16F88 as an I2C device](projects/pic16/pic16f88.md)
 
 # PHYS225 Notes
 
 - [Chapter 1 - Stern-Gerlach Experiments](notes/phys225/chapter1.md)
+- [Chapter 2 - Operators & Measurement](notes/phys225/chapter2.md)
 
 # ASTR481 Notes
 
 - [Airmass & Extinction](notes/astr481/extinction.md)
+- [Charge-Coupled Devices (CCDs)](notes/astr481/ccds.md)
