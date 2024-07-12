@@ -54,12 +54,12 @@ $$
 > $$
 S_z = \frac{\hbar}{2}\begin{pmatrix} 1 & 0\\0 & -1 \end{pmatrix}\qquad \ket{+}_z = \begin{pmatrix} 1\\0 \end{pmatrix}\qquad \ket{-}_z = \begin{pmatrix} 0\\1 \end{pmatrix}
 > $$
-> $$
+$$
 S_x = \frac{\hbar}{2}\begin{pmatrix} 0 & 1\\1 & 0 \end{pmatrix}\qquad \ket{+}_x = \frac{1}{\sqrt{2}}\begin{pmatrix} 1\\1 \end{pmatrix}\qquad \ket{-}_x = \frac{1}{\sqrt{2}}\begin{pmatrix} 1\\-1 \end{pmatrix}
-> $$
+$$
 > $$
 S_y = \frac{\hbar}{2}\begin{pmatrix} 0 & -i\\i & 0 \end{pmatrix}\qquad \ket{+}_y = \frac{1}{\sqrt{2}}\begin{pmatrix} 1\\i \end{pmatrix}\qquad \ket{-}_y = \frac{1}{\sqrt{2}}\begin{pmatrix} 1\\-i \end{pmatrix}
-> $$
+$$
 
 ## Other representations of matrix elements
 
@@ -264,7 +264,7 @@ $$
 \Delta S_z = \sqrt{\braket{S_z^2}-\braket{S_z}^2} = \sqrt{\left( \frac{\hbar}{2} \right)^2 - \left( \frac{\hbar}{2} \right)^2} = 0\hbar
 $$
 Expected, since we only have one possible result for measuring $\ket{+}$ - so no spread of possible results.
-# Commuting Observables
+## Commuting Observables
 
 > **Note**: eigenstates are equivalent to eigenvectors.
 
@@ -337,3 +337,33 @@ $$
 
 Implying $\Delta S_x\neq0$ and $\Delta S_y\neq 0$ - while we can know one spin component, we can never know the other two (they are *incompatible* observables).
 
+# $S^2$ Operator
+
+$$
+S^2 = S_x^2+S_y^2+S_z^2
+$$
+and is represented in matrix form as
+
+$$
+S^2 = \frac{3}{4}\hbar^2\begin{pmatrix} 1 & 0\\0 & 1 \end{pmatrix}
+$$
+Thus, since the $S^2$ operator is proportional to the identity operator, it must therefore commute with all the other operators $S_x,\; S_y$ and $S_z$ - this implies all states are eigenstates of the $S^2$ operator, and we can write
+$$
+S^2\ket{\psi} = \frac{3}{4}\hbar^2\ket{\psi}
+$$
+for *any* state $\psi$ in the spin-1/2 system. The $S^2$ vector has an expectation value of
+
+$$
+\braket{S^2} = \frac{3}{4}\hbar^2
+$$
+and a "length" of
+$$
+|S| = \sqrt{\braket{S^2}} = \sqrt{3}\frac{\hbar}{2}
+$$
+> This is longer than the "normal" measured component of $\hbar/2$ along any axis - implying the spin vector can **never be fully aligned along any one axis**, since there will be always components in other axes. 
+> 
+> This is often called "quantum fuzziness". 
+
+### Regarding Photons
+
+Photons *also* have spin - but due to moving at $c$ (ultra-relativistic), it can never have a spin of 0 - must be either $S_P = \pm 1$. 

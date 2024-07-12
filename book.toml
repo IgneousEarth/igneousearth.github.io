@@ -11,6 +11,7 @@ mathjax-support = true
 default-theme = "rust"
 preferred-dark-theme = "rust"
 site-url = "https://igneousearth.github.io"
+edit-url-template = "https://github.com/IgneousEarth/igneousearth.github.io/edit/main/{path}"
 
 [preprocessor.katex]
 after = ["links"]
