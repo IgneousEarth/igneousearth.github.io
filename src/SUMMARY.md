@@ -10,6 +10,7 @@
 
 - [05/24 - 05/25](mro/trips/may24may25.md)
 - [06/21 - 06/22](mro/trips/june21june22.md)
+- [07/11 - 07/15](mro/trips/jul11jul15.md)
 
 # Projects
 

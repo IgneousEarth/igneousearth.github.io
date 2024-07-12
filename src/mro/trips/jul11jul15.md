@@ -13,13 +13,13 @@ José, Naim, Parker, Ryan, Anika, Daniel
 Our plan is:
 1. At the start of each observing run, take 10 bias frames to act as "per-night calibration frames".
 
-### Interesting Objects
+### Possible Interesting Objects
 
+|               | Veil Nebula | Iris Nebula | **Eagle Nebula** | **North American Nebula** |
+| ------------- | ----------- | ----------- | ---------------- | ------------------------- |
+| **Alt. Name** | NGC 6960    | NGC 7023    | M16              | NGC 7000                  |
 
-| Veil Nebula |     |
-| ----------- | --- |
-|             |     |
-
+![](images/trip1-poi.png)
 
 
 ## Fri. June 11
@@ -27,5 +27,3 @@ Our plan is:
 Stopped by Uwijimaya and Fred Meyer along the way to collect supplies for 5 nights' stay. Started off by making sushi rolls!
 
 [sushi roll pics]
-
-As part of 
