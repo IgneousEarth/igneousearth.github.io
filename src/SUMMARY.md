@@ -14,6 +14,7 @@
 # Projects
 
 - [Using the PIC16F88 as an I2C device](projects/pic16/pic16f88.md)
+- [Useful Jupyter notebooks](projects/notebooks/notebooks.md)
 
 # PHYS225 Notes
 
