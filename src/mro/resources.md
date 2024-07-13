@@ -7,11 +7,10 @@ Resources, links and reference information for Manastash Ridge Observatory.
 
 ## Camera Info
 
-The CCD is an Oxford Instruments Andor [iKon-M 934](https://andor.oxinst.com/products/ikon-xl-and-ikon-large-ccd-series/ikon-m-934) 
+The CCD is an Oxford Instruments Andor [iKon-M 934](https://andor.oxinst.com/products/ikon-xl-and-ikon-large-ccd-series/ikon-m-934).
 
 > **Links**
 > - [Datasheet](attachments/andor-ikon-m-934-specifications.pdf)
-> - [Backend SDK setup guide](https://pylablib.readthedocs.io/en/stable/devices/Andor.html)
 
 
 
@@ -20,5 +19,7 @@ The CCD is an Oxford Instruments Andor [iKon-M 934](https://andor.oxinst.com/pro
 # Resources
 
 [Evora Client](https://github.com/UWMRO/evora-client) - frontend website for controlling the MRO CCD camera. 
+
+[Evora Server](https://github.com/UWMRO/evora-server) - backend to work with the Andor SDK 2.
 
 [Git cheat sheet](https://wizardzines.com/git-cheat-sheet.pdf) - really lovely design, covers most use cases 
