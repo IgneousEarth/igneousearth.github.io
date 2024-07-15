@@ -17,3 +17,25 @@
 	1. Initialize and set temperature to **-82° C**. 
 
 See [Telescope Setup & Calibration](telescope_setup.md) for information on preparing the telescope for observation.
+
+## Departure
+
+1. [ ] **Put away all media items** (books, games, cables) in living room & observing room.
+2. [ ] **Kitchen**:
+	1. [ ] Wash dishes & clean up kitchen - wipe the sink down too.
+	2. [ ] Collect trash & recycling to bring back.
+4. [ ] **Restrooms** - clean restrooms, wash toilets & sinks, sweep the floors. 
+5. [ ] **Cleaning the floors** - vacuum floor upstairs, sweep floor downstairs. 
+6. [ ] **Water cleanup**:
+	1. [ ] Measure water level and log it in the Google Doc.
+	2. [ ] Remove tube from water jug under sink & seal it.
+8. **Electricity**:
+	1. [ ] Turn off water pump circuit breaker.
+	2. [ ] Unplug appliances & turn off power strips (don't turn off observing room computers). 
+	4. [ ] Turn off lights.
+	5. [ ] Turn all thermostats off.
+9. [ ] **Groceries** - take pictures of inventories - note anything the next group should pick up from the store.
+10. [ ] **Water jugs** - put empty blue water jugs and empty clear plastic gallon jugs (if you can fit them) in car. 
+11. [ ] Close living room shutters & all interior doors, and lock them.
+
+> This guide is shortened from the official version, available at [https://sites.google.com/a/uw.edu/mro/checklist](https://sites.google.com/a/uw.edu/mro/checklist).
