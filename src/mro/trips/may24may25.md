@@ -33,7 +33,7 @@ Acquired copious amounts of soda from Fred Meyer due to a bizarre buy-two-get-th
 - DUST - see ecam-83
 - Same dust particles different filters? ... filter may not have moved or dust on CCDs. 
 
-![Master filters](images/masterfilter-may2425.png)
+![Master filters](images/may2425/masterfilter-may2425.png)
 
 ## Sat. May 25 - Day
 
@@ -43,8 +43,8 @@ Pulled off CCD to see if dust effects were on it.
 
 | **Dusty darling**                      | **Better**                             |
 | -------------------------------------- | -------------------------------------- |
-| ![](images/PXL_20240525_205004684.jpg) | ![](images/PXL_20240525_205159041.jpg) |
-| ![](images/dirty_2s.png)               | ![](images/clean_2s.png)               |
+| ![](images/may2425/2425dirtyccd.jpg) | ![](images/may2425/2424cleanccd.jpg) |
+| ![](images/may2425/dirty_2s.png)               | ![](images/may2425/clean_2s.png)               |
 
 ---
 ## Wish List

@@ -31,9 +31,9 @@ Acquired Vega and Arcturus, until clouds moved in making further observation dif
 
 ### Inventory 
 
-| ![](images/PXL_20240622_171618561.jpg) | ![](images/PXL_20240622_171629250.jpg) |
+| ![](images/may2425/2425soup.jpg) | ![](images/may2425/2425medical.jpg) |
 | -------------------------------------- | -------------------------------------- |
-| ![](images/PXL_20240622_171635003.jpg) | ![](images/PXL_20240622_171705879.jpg) |
+| ![](images/may2425/2425snacks.jpg) | ![](images/may2425/2425fridge.jpg) |
 ## Sleipnir
 
 Sleipnir was acting slower than usual - ironically named. Boot hung up on something to do with `SGX` - apparently okay to ignore, but boot logs also showed some issue with an `md5sum` failed verification on a portable disk image (paraphrased). StackExchange answers claimed it was probably something to do with Mint, no solutions provided. Booting takes ~3 minutes as a result, in addition to the slowness of `ubuntu`. 
