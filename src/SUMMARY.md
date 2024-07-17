@@ -26,3 +26,4 @@
 
 - [Airmass & Extinction](notes/astr481/extinction.md)
 - [Charge-Coupled Devices (CCDs)](notes/astr481/ccds.md)
+- [Time](notes/astr481/time.md)

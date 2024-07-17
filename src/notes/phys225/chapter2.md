@@ -367,3 +367,68 @@ $$
 ### Regarding Photons
 
 Photons *also* have spin - but due to moving at $c$ (ultra-relativistic), it can never have a spin of 0 - must be either $S_P = \pm 1$. 
+
+# Spin-1 Systems
+
+*Fermions* are particles with spins of multiples of 1/2 (i.e. $1/2$, $3/2$, $5/2$), while *bosons* are those with full-integer spins (i.e. $0$, $1$, $2$). Spin-1 bosons have spin states of $\ket{1}$, $\ket{0}$ or $\ket{-1}$
+
+![](images/spin1-analyzer.png)
+where
+
+$$
+\ket{1} = \begin{pmatrix}1\\0\\0\end{pmatrix}\qquad \ket{0} = \begin{pmatrix}0\\1\\0\end{pmatrix}\qquad \ket{-1} = \begin{pmatrix}0\\0\\1\end{pmatrix}
+$$
+$$
+S_z\ket{1} = \hbar\ket{1}\qquad S_z\ket{0} = 0\hbar\ket{0}\qquad S_z\ket{-1}=-\hbar\ket{-1}
+$$
+$$
+S_z \equiv \hbar \begin{pmatrix}1 & 0 & 0\\0 & 0 & 0\\0 & 0 & -1\end{pmatrix}
+$$
+> The eigenvalues $1\hbar$, $0\hbar$ and $-1\hbar$ are on the main diagonal of $S_z$.
+
+For $S_x$,
+$$
+\ket{1}_x = \begin{pmatrix}\frac{1}{2}\\\frac{1}{\sqrt{2}}\\\frac{1}{2}\end{pmatrix}\qquad \ket{0}_x = \begin{pmatrix}\frac{1}{\sqrt{2}}\\0\\-\frac{1}{\sqrt{2}}\end{pmatrix}\qquad \ket{-1}_x = \begin{pmatrix}\frac{1}{2}\\-\frac{1}{\sqrt{2}}\\\frac{1}{2}\end{pmatrix}
+$$
+
+$$
+S_x \equiv \frac{\hbar}{\sqrt{2}} \begin{pmatrix}0 & 1 & 0\\1 & 0 & 1\\0 & 1 & 0\end{pmatrix}
+$$
+and for $S_y$,
+
+$$
+\ket{1}_y = \begin{pmatrix}\frac{1}{2}\\i\frac{1}{\sqrt{2}}\\-\frac{1}{2}\end{pmatrix}\qquad \ket{0}_y = \begin{pmatrix}\frac{1}{\sqrt{2}}\\0\\\frac{1}{\sqrt{2}}\end{pmatrix}\qquad \ket{-1}_y = \begin{pmatrix}\frac{1}{2}\\-i\frac{1}{\sqrt{2}}\\-\frac{1}{2}\end{pmatrix}
+$$
+
+$$
+S_y \equiv \frac{\hbar}{\sqrt{2}} \begin{pmatrix}0 & -i & 0\\i & 0 & -i\\0 & i & 0\end{pmatrix}
+$$
+
+**Note**: The Stern-Gerlach experiments have conceptually the same results - but note that experiment 2 differs (not all 1/3 - rather, one is 1/2, the other two 1/4). 
+
+# General Quantum Systems
+
+Let $s$ denote the spin of some system with number of beams $2s+1$ (i.e. for a spin-1 system, this would be 3, spin-1/2 system, 2). Let the possible values for spin on the $z$ axis be labeled by $m$ - then,
+
+$$
+S^2\ket{sm} = s(s+1)\hbar^2\ket{sm}
+$$
+$$
+S_z\ket{sm} = m\hbar\ket{sm}
+$$
+> $s$ is known as the **spin (angular momentum) quantum number** and $m$ is the **spin component quantum number** (or magnetic quantum number).
+
+In spin-1/2,
+$$
+\ket{\frac{1}{2},\frac{1}{2}} = \ket{+}
+$$
+$$
+\ket{\frac{1}{2},-\frac{1}{2}} = \ket{+}
+$$
+and in spin-1, 
+
+$$
+\ket{11} = \ket{1}
+$$
+$$\ket{10}=\ket{0}$$
+$$\ket{1,-1}=\ket{-1}$$
