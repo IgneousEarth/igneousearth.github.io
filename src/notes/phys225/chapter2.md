@@ -408,7 +408,7 @@ $$
 
 # General Quantum Systems
 
-Let $s$ denote the spin of some system with number of beams $2s+1$ (i.e. for a spin-1 system, this would be 3, spin-1/2 system, 2). Let the possible values for spin on the $z$ axis be labeled by $m$ - then,
+Let $s$ denote the spin of some $s$-spin system with number of beams $2s+1$ (i.e. for a spin-1 system, this would be 3, spin-1/2 system, 2). Let the possible values for spin on the $z$ axis be labeled by $m$ - then,
 
 $$
 S^2\ket{sm} = s(s+1)\hbar^2\ket{sm}
