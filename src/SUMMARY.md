@@ -15,13 +15,14 @@
 # Projects
 
 - [Using the PIC16F88 as an I2C device](projects/pic16/pic16f88.md)
-- [Useful Jupyter notebooks](projects/notebooks/notebooks.md)
+- [Replacing valves on an N14 Mini Cooper](projects/mini/valves.md)
 
 # PHYS225 Notes
 
 - [Chapter 1 - Stern-Gerlach Experiments](notes/phys225/chapter1.md)
 - [Chapter 2 - Operators & Measurement](notes/phys225/chapter2.md)
 - [Chapter 3 - Schrödinger Time Evolution](notes/phys225/chapter3.md)
+- [Chapter 16 - Quantum Computing](notes/phys225/chapter16.md)
 
 # ASTR481 Notes
 
