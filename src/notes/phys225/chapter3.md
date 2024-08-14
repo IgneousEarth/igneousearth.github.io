@@ -1,5 +1,9 @@
 # Chapter 3 - Schrödinger Time Evolution
 
+> Reference *Quantum Mechanics: A Paradigms Approach* by David McIntyre.
+
+---
+
 The time evolution of a quantum system is governed by the differential equation
 
 $$ i\hbar\frac{d}{dt}\ket{\psi(t)} = H(t)\ket{\psi(t)} $$

@@ -10,9 +10,9 @@ Thus, enter the quantum computer - at least, the idea of it.
 
 # Qubits - Quantum Bits
 
-Classical computing uses binary digits (bits) to store information: 0 or 1. These numbers are strung together to represent larger numbers (1000101), but fundamentally use transistors that are either *on* or *off*.
+Classical computing uses binary digits (bits) to store information: 0 or 1. These numbers are strung together to represent larger numbers (1000101), but fundamentally use transistors that are either *on* or *off* (binary states).
 
-In quantum information systems, information is stored in **quantum bits** (qubits) - a system with two possible states:
+In quantum information systems, information is stored in **quantum bits** (qubits) - each a two-state system:
 $$
 \ket{0} = \ket{+}\qquad \ket{1} = \ket{-}
 $$
@@ -35,7 +35,7 @@ $$
 $$
 For an $N$-qubit system, a single superposition state contains $2^N$ coefficients to represent information - compared to a *classical* system, where though $N$ bits has $2^N$ possible states, each state contains only $N$ bits of information.
 
-> **However** - if we measure a state, the system state vector collapses from superposition onto the measured state vector - so we can only extract $N$ pieces of information from our system. We can get around this with **quantum parallelism**, as a consequence of quantum entanglement.
+> However - if we measure a state, the system state vector collapses from superposition onto the measured state vector - so we can only extract $N$ pieces of information from our system. We can get around this with **quantum parallelism**, as a consequence of quantum entanglement.
 
 ## Entangled States
 
