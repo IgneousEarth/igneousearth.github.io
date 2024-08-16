@@ -74,5 +74,3 @@ The **Copenhagen interpretation** states that, no, cats (nor any other macroscop
 Feynman had the non-answer to answer this: 
 
 > Shut up and calculate. 
-
-Whatever man. Don't kill cats, like, damn. 

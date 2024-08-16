@@ -1,5 +1,7 @@
 # Summary
 
+[Home](welcome.md)
+
 # UW MRO Docs
 
 - [Checklist](mro/checklist.md)

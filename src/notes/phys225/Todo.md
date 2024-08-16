@@ -7,10 +7,15 @@
 - [x] McIntrye 16.2
 - [x] Create schedule for APL in Autumn 2024
 - [x] McIntrye 4.1, 4.2 
-- [ ] McIntrye 5.1, 5.2
+- [x] McIntrye 5.1, 
+- [x] 5.2, 
+- [ ] 5.3, 
+- [ ] 5.4, 
+- [ ] 5.5
 - [ ] Clean house
 - [ ] Get started on homework 7
 - [ ] Find pills at home
+- [ ] Check grad school apps for class requirements for next year
 - [x] Get in touch with mum re: payment for psych. 
 
 ## This Week
