@@ -26,6 +26,7 @@
 - [Chapter 3 - Schrödinger Time Evolution](notes/phys225/chapter3.md)
 - [Chapter 4 - Quantum Spookiness](notes/phys225/chapter4.md)
 - [Chapter 5 - Quantized Energies](notes/phys225/chapter5.md)
+- [Chapter 6 - Unbound States](notes/phys225/chapter6.md)
 - [Chapter 16 - Quantum Computing](notes/phys225/chapter16.md)
 
 # ASTR481 Notes
