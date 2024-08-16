@@ -263,6 +263,7 @@ $$
 	\ket{\nu_\mu} &\approx \ket{\nu_2}\\
 \end{aligned}
 $$
+
 ---
 
 **Example**
