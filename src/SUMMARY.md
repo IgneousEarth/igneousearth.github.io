@@ -2,22 +2,9 @@
 
 [Home](welcome.md)
 
-# UW MRO Docs
+# PHYS 321 Notes
 
-- [Checklist](mro/checklist.md)
-- [Setup & Calibration](mro/telescope_setup.md)
-- [Resources](mro/resources.md)
-
-# UW MRO Trip Logs
-
-- [05/24 - 05/25](mro/trips/may24may25.md)
-- [06/21 - 06/22](mro/trips/june21june22.md)
-- [07/11 - 07/15](mro/trips/jul11jul15.md)
-
-# Projects
-
-- [Using the PIC16F88 as an I2C device](projects/pic16/pic16f88.md)
-- [Replacing valves on an N14 Mini Cooper](projects/mini/valves.md)
+- [Chapter 2 - Electrodynamics](notes/phys321/chapter2.md)
 
 # PHYS225 Notes
 
@@ -35,3 +22,18 @@
 - [Charge-Coupled Devices (CCDs)](notes/astr481/ccds.md)
 - [Time](notes/astr481/time.md)
 - [Spectrographs](notes/astr481/spectrographs.md)
+# UW MRO Docs
+
+- [Checklist](mro/checklist.md)
+- [Setup & Calibration](mro/telescope_setup.md)
+- [Resources](mro/resources.md)
+
+# UW MRO Trip Logs
+
+- [05/24 - 05/25](mro/trips/may24may25.md)
+- [06/21 - 06/22](mro/trips/june21june22.md)
+- [07/11 - 07/15](mro/trips/jul11jul15.md)
+
+# Projects
+
+- [Using the PIC16F88 as an I2C device](projects/pic16/pic16f88.md)
