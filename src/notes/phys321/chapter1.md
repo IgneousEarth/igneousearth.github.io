@@ -112,11 +112,84 @@ The **curl** of some vector function $\vec{a}$ represents how much the function 
 $$
 \nabla \times \vec{a} = \hat{x}\left(\frac{da_z}{dy} - \frac{da_y}{dz}\right) + \hat{y}\left(\frac{da_x}{dz} - \frac{da_z}{dx}\right) + \hat{z}\left(\frac{da_y}{dx} - \frac{da_x}{dy}\right)
 $$
-## Properties of gradient, curl and divergence
+## Del Again ($\nabla^2$)
 
-Some notable properties:
+Enumerating over the ways we can apply $\nabla$ twice:
 
 1. **Laplacian**: the cross product of $\nabla$ with the gradient of a function results in the Laplacian, such that
 $$
 \nabla \cdot (\nabla f) = \nabla^2f= \frac{d^2f}{dx^2} + \frac{d^2f}{dy^2} + \frac{d^2z}{dz^2}
+$$
+2. **Curl of gradient**: always zero. 
+$$
+\nabla \times (\nabla f) = 0
+$$
+3. **Gradient of divergence**: not a lot of physical applications, calculable though. 
+$$
+\nabla (\nabla\cdot \vec{a})
+$$
+4. **Divergence of curl**: always zero. 
+$$
+\nabla \cdot (\nabla \times \vec{v}) = 0
+$$
+5. **Curl of curl**: most easily defined as the acceleration of the swirl, like a hurricane speeding up.
+$$
+\nabla \times (\nabla \times \vec{a}) = \nabla(\nabla \cdot \vec{a}) - \nabla^2\vec{a}
+$$
+# Integrals
+
+In electrodynamics, we have **line** (path) integrals, **surface** integrals (or *flux*) and **volume** integrals. 
+
+## Line integrals
+
+Iterate over infinitesimally small displacement vectors $d\vec{l}$.
+$$
+\int_a^b \vec{a}\cdot d\vec{l}
+$$
+If $a=b$, the line integral iterates over a closed loop and we can write
+$$
+\oint \vec{a}\cdot d\vec{l}
+$$
+> In elementary physics, a common example is work done by a force. 
+> $$ W = \int \vec{F}\cdot d\vec{l}$$
+
+While path taken normally matters (distance), there are some vectors where only *displacement* matters (for forces, these are called **conservative** forces, like gravity). 
+
+Wikipedia has a [really cool animation](https://en.wikipedia.org/wiki/Line_integral) of line integrals:
+
+<center>
+
+![](https://upload.wikimedia.org/wikipedia/commons/b/b0/Line_integral_of_vector_field.gif)
+
+</center>
+
+## Surface integrals
+
+Surface integrals iterate over infinitesimally small areas $d\vec{a}$, with norms perpendicular to the surface. 
+$$
+\int_{\mathcal{S}} \vec{v}\cdot d\vec{a}
+$$
+In this case, if the surface is closed (i.e. like a sphere, rather than a hill), then we can write it in closed loop form.
+$$
+\oint \vec{v}\cdot d\vec{a}
+$$
+![](images/chapter1/surface-integral.svg)
+
+Surface integrals are really useful for things like *flux* where something is moving through some area - i.e. imagine radio waves passing through a curved gas cloud or radiation falling "through" a planet.
+
+## Volume integrals
+
+Volume integrals integrate over infinitesimally small volumes $d\tau=dx\;dy\;dz$. 
+
+$$
+\int \vec{a}\;d\tau = \int (a_x\hat{x}+a_y\hat{y}+a_z\hat{z})d\tau
+$$
+
+If some function $f(x,y,z)$ represented density of a substance, then the volume integral over it would be total mass.
+
+# Integration by Parts
+
+Also known as the "inverse product rule". 
+$$
+\int u\; dv = uv-\int v\;du
 $$
