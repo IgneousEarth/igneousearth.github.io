@@ -14,12 +14,12 @@ In an **electrostatic** system (no moving charges as opposed to an electrodynami
 
 ## Coulomb's Law
 
-Electrostatics simply takes into account distance. Coulomb's law is
+Electrostatics simply takes into account distance and charge strength. Coulomb's law is
 
 $$
 \vec{F} = \frac{1}{4\pi\epsilon_0} \frac{qQ}{\mathbb{\mathcal{R}}^2}\hat{\mathbb{\mathcal{R}}}
 $$
-> $\epsilon_0$ is the permittivity of free space ($\epsilon_0=8.85\times10^{-12}$ $\text{C}^2/\text{N}\cdot\text{m}^2)$ and $\mathcal{R}=\vec{r}-\vec{r}'$ (my equivalent to Griffith's script-r).
+> $\epsilon_0$ is the permittivity of free space ($\epsilon_0=8.85\times10^{-12}$ $\text{C}^2/\text{N}\cdot\text{m}^2)$ and $\mathcal{R}=\vec{r}-\vec{r}'$ (Griffith's script-r).
 
 in electrostatics, force increases with higher-magnitude charges, and decreases with distance.
 
@@ -29,9 +29,12 @@ If we have *several* charges, we just sum their individual Coulomb forces as cal
 $$
 \begin{aligned}
 	\vec{F} &= \vec{F_1} + \vec{F_2} + \cdots\\
-			&= \frac{Q}{4\pi\epsilon_0}\left( \frac{q_1}{\mathcal{R_1}^2}\hat{\mathcal{R_1}} + \frac{q_2}{\mathcal{R_2}^2}\hat{\mathcal{R_2}} + \cdots \right)\\
-			&= Q\vec{E}
+			&= \frac{Q}{4\pi\epsilon_0}\left( \frac{q_1}{\mathcal{R_1}^2}\hat{\mathcal{R_1}} + \frac{q_2}{\mathcal{R_2}^2}\hat{\mathcal{R_2}} + \cdots \right)
 \end{aligned}
+$$
+In shorthand,
+$$
+\vec{F} = Q\vec{E}
 $$
 where $\vec{E}$, the **electric field**, is
 $$
@@ -39,14 +42,22 @@ $$
 $$
 Note that the electric field is defined by the source charges present; it's more a model to represent the electric potential at various points, and what would happen if we dropped a test charge in. 
 
-If the charges are continuously distributed, then we use an integral. The charge contained in some space $dq$ is $dq \approx \lambda\;dl\;\text{(1D line)} \approx \sigma\;da\;\text{(2D area)}\approx \rho\;dV\;\text{(3D volume)}$.
+## Continuous Charge Distributions
+
+If we have a set of charges $q_i$, then our electric field is a *discrete charge distribution*. If, however, the charge is distributed continuously over some region, then we have a *continuous charge distribution*.
+
+![](images/chapter2/charge-distributions.png)
+The electric field is then an integral over that continuous distribution:
 
 $$
-\vec{E} = \frac{1}{4\pi\epsilon_0}\int \frac{\lambda(\vec{r'})}{\mathcal{R}^2}\hat{\mathcal{R}}\; dl'
+\vec{E}(\vec{r}) = \frac{1}{4\pi\epsilon_0} \int \frac{1}{\mathcal{R}^2}\hat{\mathcal{R}}\;dq
 $$
-$$
-\vec{E} = \frac{1}{4\pi\epsilon_0}\int \frac{\sigma(\vec{r'})}{\mathcal{R}^2}\hat{\mathcal{R}}\; da'
-$$
-$$
-\vec{E} = \frac{1}{4\pi\epsilon_0}\int \frac{\rho(\vec{r'})}{\mathcal{R}^2}\hat{\mathcal{R}}\; dV'
-$$
+where $dq$ varies for our continuous distribution type (1D, 2D or 3D), such that:
+- **Line**:  $dq = \lambda\;dl'$
+- **Area**: $dq = \sigma\;da'$
+- **Volume**: $dq = \rho\;d\tau'$
+
+---
+# Divergence and Curl of Electrostatic Fields
+
+> Chapter 2.2 in Griffiths.
