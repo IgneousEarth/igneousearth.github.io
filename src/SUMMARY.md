@@ -1,16 +1,11 @@
 # Summary
 
-[Home](welcome.md)
+[Welcome](welcome.md)
 
 # PHYS 321 Notes
 
 - [Chapter 1 - Relevant Mathematics](notes/phys321/chapter1.md)
 - [Chapter 2 - Electrodynamics](notes/phys321/chapter2.md)
-
-# AMATH 353 Notes
-
-- [Chapter 1 - Waves & PDEs](notes/amath353/chapter1.md)
-- [Chapter 2 - Traveling and standard waves](notes/amath353/chapter2.md)
 
 # PHYS225 Notes
 
