@@ -40,17 +40,16 @@ where $\vec{E}$, the **electric field**, is
 $$
 \vec{E} = \frac{1}{4\pi\epsilon_0}\sum_{i=1}^n \frac{q_i}{\mathcal{R_i}^2}\hat{\mathcal{R_i}}
 $$
-Note that the electric field is defined by the source charges present; it's more a model to represent the electric potential at various points, and what would happen if we dropped a test charge in. 
+where $\epsilon_0 = 8.85\times10^{-12}\;\frac{C^2}{N\cdot{m}}$.
 
-> $$ \epsilon_0 = 8.85\times10^{-12}\;\frac{C^2}{N\cdot{m}}$$
+The electric field is the *force per unit charge* - this force can *only* be imparted by the presence of *other charges*. 
 
 ## Continuous Charge Distributions
 
-If we have a set of charges $q_i$, then our electric field is a *discrete charge distribution*. If, however, the charge is distributed continuously over some region, then we have a *continuous charge distribution*.
+If we have a set of charges $q_i$, then our electric field is generated from a *discrete charge distribution*. If, however, the charge is distributed continuously over some region, then we have a *continuous charge distribution* generating the $\vec{E}$-field.
 
 ![](images/chapter2/charge-distributions.png)
-The electric field is then an integral over that continuous distribution:
-
+The electric field calculated as an integral over that continuous distribution:
 $$
 \vec{E}(\vec{r}) = \frac{1}{4\pi\epsilon_0} \int \frac{1}{\mathcal{R}^2}\hat{\mathcal{R}}\;dq
 $$
@@ -91,7 +90,7 @@ $$
 
 ---
 
-For example in 3D, if a point charge $q$ is at the origin then the flux of $\vec{E}$ through a sphere around it is
+For example: in 3D, if a point charge $q$ is at the origin then the flux of $\vec{E}$ through a sphere around it is
 $$
 \oint \vec{E} \cdot d\vec{a} = \int \frac{1}{4\pi\epsilon_0} \left( \frac{1}{r^2}\hat{r} \right)\cdot (r^2 \sin\theta\;d\theta\;d\phi \hat{r}) = \frac{1}{\epsilon_0}q
 $$
@@ -106,6 +105,8 @@ Note that Gauss's law is **only** useful with objects where the *E-field is poin
 The associated coordinate system is [used for each](chapter1.md#Curvilinear%20Coordinates).
 
 **Note**: flux from *external charges is ignored*, since the flux entering a Gaussian surface from an external charge will be equal to the flux leaving that surface from the other side - hence, net flux from those external charges is zero. 
+
+> If the object we're evaluating doesn't have perpendicular surface elements (i.e. a charge at the north pole of a sphere instead of the center), then some problems can be approached by creating another Gaussian element centered over the charge which subtends the same angle, though this can get geometrically complicated.
 
 ## Divergence of $\vec{E}$
 
@@ -135,13 +136,87 @@ $$
 
 ---
 
-Since $\nabla \times \vec{E} = 0$, the line integral around any closed loop is *zero* - thus, the line integral of $\vec{E}$ from point $\vec{a}$ to point $\vec{b}$ is the *same* *for* *all paths*. So we use a scalar $V$ that represents electric potential as a useful simplifying quantity. 
-
-Electric potential $V$ is (by definition) path-independent, effectively representing a "displacement potential".
+Electric potential $V$ is a good indicator of the "strength" of an electric field between two points, and is defined as 
 $$
 V(\vec{r}) = -\int_{\mathcal{O}}^{\vec{r}} \vec{E}\cdot d\vec{l}
 $$
-and, flipped about, looks like
+with units $J/C$. 
+
+> A "natural" origin $\mathcal{O}$ is a point infinitely far from the charge, though only when the charge distribution itself doesn't *also* extend to infinity.
+
+in differential form, it's the reverse:
 $$
 \vec{E} = -\vec{\nabla}V
 $$
+Voltage is path-independent and only displacements matter - hence the electric potential between points $\vec{a}$ and $\vec{b}$ is
+$$
+V(\vec{b}) - V(\vec{a}) = -\int_{\vec{a}}^{\vec{b}} \vec{E}\cdot d\vec{l}
+$$
+## Poisson & Laplace Equations
+
+**Poisson's equation** says
+$$
+\nabla^2V = -\frac{\rho}{\epsilon_0} 
+$$
+If there is no charge ($\rho = 0$), Poisson's equation turns into **Laplace's equation**:
+$$
+\nabla^2V = 0
+$$
+## Voltage in terms of charges
+
+For a point charge $q$
+$$
+V(\vec{r}) = \frac{1}{4\pi\epsilon_0}\frac{q}{\mathcal{R}}
+$$
+> $\vec{r}$ is the reference point from origin, $\mathcal{R}$ from the point charge to the reference point $\vec{r}$.
+
+For a continuous distribution,
+$$
+V(\vec{r}) = \frac{1}{4\pi\epsilon_0}\int \frac{1}{\mathcal{R}}\;dq
+$$
+and for a volume (to compute $V$ when we know $\rho$):
+$$
+V(\vec{r}) = \frac{1}{4\pi\epsilon_0} \int\frac{\rho(\vec{r}')}{\mathcal{R}}\;d\tau'
+$$
+> $\vec{r}'$ from origin to charge.
+
+**Note**: this is similar to the formula for electric field, but is missing $\hat{\mathcal{R}}$ - $V$ is a scalar quantity, directionless.
+
+## Summary
+
+The three "fundamentals" of electrostatics are $\rho$, $\vec{E}$ and $V$, and are related by the following:
+
+![](images/chapter2/eq-relations.png)
+> Griffith's Fig. 2.35.
+
+# Work and Energy
+
+> Griffith's 2.4.
+
+---
+
+For a conservative force, work is *force* times *displacement*. In electrostatics, our equivalent version is
+$$
+\Delta V = \frac{W}{Q}\qquad W=Q\Delta V
+$$
+where **work** here is the work it takes, **per unit charge**, to carry a charge from $\vec{a}$ to $\vec{b}$. 
+
+## Energy in a Point Charge Distribution
+
+Imagine we had some charge $q_1$ - then brought in a new charge $q_2$ to join $q_1$. 
+
+![](images/chapter2/pcd-new-charge.png)
+
+It would cost 
+$$W_2 = q_2V_1(\vec{r_{2}})=\frac{1}{4\pi\epsilon_0} q_2 \left( \frac{q_1}{r_{12}} \right)$$
+Then, to bring in a third charge $q_3$ would act against the superposition of $q_1$ and $q_2$:
+$$
+W_3 = \frac{1}{4\pi\epsilon_0} q_3\left( \frac{q_1}{r_{13}} + \frac{q_2}{r_{23}} \right)
+$$
+... etc. To assemble $n$ charges, we'd need a work of
+
+$$
+W = \frac{1}{2}\sum^n_{i=1} q_i\left( \sum^n_{j\neq i} \frac{1}{4\pi\epsilon_0} \frac{q_j}{r_{ij}} \right) = \frac{1}{2}\sum^n_{i=1} q_i V(\vec{r_i})
+$$
+
+## Energy in a Continuous Charge Distribution
