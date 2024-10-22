@@ -199,11 +199,20 @@ For a conservative force, work is *force* times *displacement*. In electrostatic
 $$
 \Delta V = \frac{W}{Q}\qquad W=Q\Delta V
 $$
-where **work** here is the work it takes, **per unit charge**, to carry a charge from $\vec{a}$ to $\vec{b}$. 
 
-## Energy in a Point Charge Distribution
+More extended,
+$$
+W = \int_{\vec{a}}^{\vec{b}} \vec{F}\cdot d\vec{l} = -Q\int_{\vec{a}}^{\vec{b}}  \vec{E}\cdot d\vec{l} = Q[V(\vec{b}) - V(\vec{a})]
+$$
 
-Imagine we had some charge $q_1$ - then brought in a new charge $q_2$ to join $q_1$. 
+where **work** here is the work it takes, **per unit charge**, to carry a charge from $\vec{a}$ to $\vec{b}$. If our reference point $\vec{a}=\infty$ and we let $\vec{b}=\vec{r}$, then
+$$
+W = Q[V(\vec{r}) - V(\infty)] \equiv QV(\vec{r})
+$$
+
+## Work in a Point Charge Distribution
+
+Imagine we had some charge $q_1$ - then brought in a new charge $q_2$ to join $q_1$. Our work done would be
 
 ![](images/chapter2/pcd-new-charge.png)
 
@@ -219,4 +228,13 @@ $$
 W = \frac{1}{2}\sum^n_{i=1} q_i\left( \sum^n_{j\neq i} \frac{1}{4\pi\epsilon_0} \frac{q_j}{r_{ij}} \right) = \frac{1}{2}\sum^n_{i=1} q_i V(\vec{r_i})
 $$
 
-## Energy in a Continuous Charge Distribution
+## Work in a Continuous Charge Distribution
+
+For a continuous charge distribution, we use our last equation for our point charge distribution system and replace the sum $\sum$ with an integral $\int$.
+$$
+W = \frac{1}{2}\int \rho V\;d\tau
+$$
+With a bit of mathematics, this is equivalent to
+$$
+W = \frac{\epsilon_0}{2} \int E^2\'d\tau
+$$
