@@ -238,3 +238,85 @@ With a bit of mathematics, this is equivalent to
 $$
 W = \frac{\epsilon_0}{2} \int E^2\'d\tau
 $$
+# Conductors
+
+> Griffith's 2.5.
+
+**Conductors** are materials in which electrons are free to roam (like cows, on an open ranch 👍). In contrast, **insulators** have electrons pretty much immobile and packed-together (like Monsanto farms 👎). 
+
+![](images/chapter2/conductor-insulator.svg)
+
+We can approximate metals as ideal-case conductors (though *perfect* conductors don't yet exist, though we're gradually coming closer) with the following attributes:
+
+1. $\vec{E} = \vec{0}$ **inside a conductor** - or, the induced field will cancel the external field. If an external field $\vec{E_0}$ is applied to a conductor, free electrons will move toward the E-field until they all sit on the surface, creating a deficit of charges on the opposite surface and *positively charging* it.
+   ![](images/chapter2/conductor-polarization.svg)
+   Crucially, the *net* E-field is zero, so the fields must *cancel* inside:
+   $$ \vec{E_1} + \vec{E_0} = 0 \qquad \rightarrow \qquad \vec{E_1} = -\vec{E_0}$$
+   Charge will *continue to flow* until the cancellation is complete. *Outside* the conductor, $\vec{E}\neq 0$, since the two fields don't tend to cancel. 
+2. **Charge density is zero** $(\rho=0)$: Since Gauss's law says $\vec{\nabla} \cdot \vec{E}=\rho/\epsilon_0$, zero E-field means zero charge density in the conductor.
+3. **Net charge resides on surface**: positive and negative charges will only sit on the surface after enough time passes. 
+4. **$\vec{E}$ is perpendicular to the surface**: somewhat obvious, but bears mentioning. 
+
+> *Any* dynamical system will try to minimize potential energy - the charges residing on the surface are an extension of this. It might take some time, but will eventually happen. 
+
+## Induced Charges
+
+If we hold a charge $+q$ near a conductor, the conductor will move toward the charge - this is because negative charges will accumulate closer to $+q$ than the "effective" $+$ charges on the far side. Force falls off by $r^2$, so the conductor will be *attracted* to the $+q$ charge.
+![](images/chapter2/conductor-charging.svg)
+## Cavities
+
+Let's say we have a cavity inside our conductive surface. There are two scenarios here:
+
+![](images/chapter2/cavities.svg)
+
+**Empty cavity**: If the cavity has no charge, the field within the cavity is *zero*, regardless of the external fields applied. This is the principle of the **Faraday cage**. 
+
+**Non-empty cavity**: The charge contained by the cavity will induce an opposite charge $-q$ *uniformly distributed* on the walls of the cavity - the only information transmitted to an external observer is the distribution of charge on the exterior wall (i.e. the *magnitude* of the internal E-field, or the amount of net charge contained). 
+
+## Surface Charge and Force on a Conductor
+
+Through the field inside a conductor is zero, the field immediately *outside* is
+$$
+\vec{E} = -\frac{\sigma}{\epsilon_0}\hat{n} \qquad\text{where}\qquad  \sigma = -\epsilon_0\frac{dV}{dn}
+$$
+
+> If we only care about the *magnitude* of the E-field, then $E = -1/\epsilon_0 \sigma$.
+
+However, the electric field is *discontinuous* at a surface charge, so when calculating the force per unit area (or pressure) of an E-field at the surface of a conductor, we average the E-fields above and below the surface, such that
+$$
+\vec{f} = \frac{1}{2}\sigma(\vec{E}_{\text{above}} + \vec{E}_{\text{below}}) = \frac{1}{2\epsilon_0}\sigma^2\hat{n}
+$$
+This is the outward **electrostatic pressure** on the surface, tending to *draw the conductor* into a given field, regardless of the sign of $\sigma$ (squared away).
+
+The pressure at this point, expressed in terms of the field *just outside* the surface, is
+$$
+P = \frac{\epsilon_0}{2}E^2
+$$
+## Capacitors
+
+Put two conductors beside one another, with equal and opposite uniform net charges $+Q$ on one and $-Q$ on the other:
+
+![](images/chapter2/capacitors.svg)
+Since the charge density is *uniform* on each surface, $\sigma=Q/A$ (on the left plate) and the field between the two is
+$$
+E = \frac{\sigma}{\epsilon_0} = \frac{1}{\epsilon_0}\frac{Q}{A}
+$$
+with a *voltage* of
+$$
+\begin{aligned}
+	V &= \int E\;dl \\
+	&= Ed \\
+	&= \frac{\sigma}{\epsilon_0}d\\
+	&=\frac{1}{\epsilon_0}\frac{Q}{A}d
+\end{aligned}
+$$
+> $V = Ed$ in a uniform E-field. 
+
+We'll define a new term to represent the proportionality of the arrangement, *capacitance*:
+$$
+C = \frac{Q}{V} \equiv \frac{Q}{Ed} \equiv \epsilon_0\frac{A}{d}
+$$
+with units of **Farads** $(\text{F} = \frac{\text{C}}{\text{V}})$, usually expressed in $\mu \text{F}\;(10^{-6})$ or $p \text{F}\;(10^{-12})$. The **work** to go from one side to the other is
+$$
+W = \frac{1}{2}CV^2
+$$
