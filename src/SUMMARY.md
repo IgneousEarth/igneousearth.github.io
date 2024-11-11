@@ -6,6 +6,7 @@
 
 - [Chapter 1 - Relevant Mathematics](notes/phys321/chapter1.md)
 - [Chapter 2 - Electrodynamics](notes/phys321/chapter2.md)
+- [Chapter 3 - Potentials](notes/phys321/chapter3.md)
 
 # PHYS225 Notes
 

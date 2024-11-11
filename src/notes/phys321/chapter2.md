@@ -162,13 +162,18 @@ If there is no charge ($\rho = 0$), Poisson's equation turns into **Laplace's eq
 $$
 \nabla^2V = 0
 $$
-## Voltage in terms of charges
+## Voltage equations
 
 For a point charge $q$
 $$
 V(\vec{r}) = \frac{1}{4\pi\epsilon_0}\frac{q}{\mathcal{R}}
 $$
 > $\vec{r}$ is the reference point from origin, $\mathcal{R}$ from the point charge to the reference point $\vec{r}$.
+
+For a set of point charges, we can use the principle of superposition:
+$$
+V(x,y,z) = \frac{1}{4\pi\epsilon_0} \left[ \frac{q}{\sqrt{x^2+y^2+(z-d)^2}} - \frac{q}{\sqrt{x^2+y^2+(z+d)^2}} \right]
+$$
 
 For a continuous distribution,
 $$
