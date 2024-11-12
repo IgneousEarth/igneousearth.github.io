@@ -151,3 +151,26 @@ In the context of electrostatics, separation of variables is very useful when so
 $$
 \frac{\partial^2V}{\partial x^2}+ \frac{\partial^2V}{\partial y^2} = 0
 $$
+We need solutions in the form of
+$$
+V(x,y) = X(x)Y(y)
+$$
+This can be accomplished through some mathematical trickery to find our separated variables ...
+$$
+\frac{1}{X}\frac{d^2 X}{dx^2} + \frac{1}{Y}\frac{d^2Y}{dy^2} = 0
+$$
+... which is of the form $f(x)+g(y)=0$. Thus, *both* $f(x)$ and $g(y)$ must be *constant* (we can't hold one constant and change the other with this solution still holding). 
+
+So,
+$$
+\frac{1}{X}\frac{d^2X}{dx^2}= C_1 \quad \text{and}\quad \frac{1}{Y}\frac{d^2Y}{dy^2} = C_2 \qquad C_1+C_2 = 0
+$$
+Converting each equation into an ODE,
+$$
+\frac{d^2X}{dx^2} = k^2X \qquad \frac{d^2Y}{dy^2} = -k^2Y
+$$
+... we converted a PDE into two ODEs, which are much easier to solve. Our solutions will be a constant coefficient set:
+$$
+X(x) = c_1e^{kx} + c_2e^{-kx}, \qquad Y(y) = c_3\sin(ky)+c_4\cos(ky)
+$$
+We can find our constants based on our boundary conditions now.
