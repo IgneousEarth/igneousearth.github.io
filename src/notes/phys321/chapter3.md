@@ -119,3 +119,35 @@ $$
 W = -\frac{1}{4\pi\epsilon_0}\frac{q^2}{4d}
 $$
 > The work to bring *two* point charges towards one another does work on *both* of them, while to bring a point charge toward a grounded conductor has us only doing work on *one* charge - only half the work is necessary.
+
+---
+
+## Separation of Variables
+
+> Griffiths' 3.3
+
+**Separation of variables** is a way to solve ODEs and PDEs by rewriting equations such that each of the two variables occur on different sides of the equation.
+
+Separable equations *must* be able to be written in the form
+$$
+\frac{dx}{dy} = g(x)h(y)
+$$
+We can rearrange the terms to get
+$$
+dy\frac{1}{h(y)} = g(x)dx
+$$
+integrate,
+$$
+\int\frac{1}{h(y)} dy = \int g(x)\;dx
+$$
+and add some constant term to one side to represent all our constants of integration.
+$$
+H(y) = G(x)+C
+$$
+
+---
+
+In the context of electrostatics, separation of variables is very useful when solving 2D Laplace equations, such as 
+$$
+\frac{\partial^2V}{\partial x^2}+ \frac{\partial^2V}{\partial y^2} = 0
+$$

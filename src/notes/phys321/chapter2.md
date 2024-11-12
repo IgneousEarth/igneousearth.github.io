@@ -289,7 +289,7 @@ $$
 
 However, the electric field is *discontinuous* at a surface charge, so when calculating the force per unit area (or pressure) of an E-field at the surface of a conductor, we average the E-fields above and below the surface, such that
 $$
-\vec{f} = \frac{1}{2}\sigma(\vec{E}_{\text{above}} + \vec{E}_{\text{below}}) = \frac{1}{2\epsilon_0}\sigma^2\hat{n}
+\frac{\vec{F}}{A} = \frac{1}{2}\sigma(\vec{E}_{\text{above}} + \vec{E}_{\text{below}}) = \frac{1}{2\epsilon_0}\sigma^2\hat{n}
 $$
 This is the outward **electrostatic pressure** on the surface, tending to *draw the conductor* into a given field, regardless of the sign of $\sigma$ (squared away).
 
