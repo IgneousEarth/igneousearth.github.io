@@ -174,3 +174,53 @@ $$
 X(x) = c_1e^{kx} + c_2e^{-kx}, \qquad Y(y) = c_3\sin(ky)+c_4\cos(ky)
 $$
 We can find our constants based on our boundary conditions now.
+
+---
+
+## Multipole Expansion
+
+> Griffiths 3.4
+
+Say you have some charge $Q=Q_\text{net}$ that you can see in space, far away. $Q$ is almost like an exoplanet in a sense: we know it exists, we know its total mass, and maybe we know stuff like how far away it is.
+
+But, we don't know what the surface looks like; what it's composed of, be it rock or ice or water. Just its net mass. 
+
+![](images/chapter3/why-multipole-expansion.svg)
+Similarly, our charge distribution might be crazy complicated, and it's net charge $Q_\text{net}$ only describes a tiny part of the story, albeit an important one - the **multipole expansion** is used to describe this fuller story, and is defined in terms of voltage as
+
+$$
+\begin{aligned}
+	V(\vec{r}) &= \frac{1}{4\pi\epsilon_0}\left[ \frac{1}{r}(\text{monopole moment}) + \frac{1}{r^2}(\text{dipole moment}) + \frac{1}{r^3}(\text{quadrupole moment})\ldots \right]
+\end{aligned}
+$$
+>Mathematically, it is
+> $$
+V(\vec{r}) = \frac{1}{4\pi\epsilon_0} \sum_{n=0}^\infty \frac{1}{r^{n+1}} \int (r')^n P_n(\cos\alpha)\rho(\vec{r}')\;d\tau'
+$$
+> where $\alpha$ is the angle between $\vec{r}$ and $\vec{r'}$, $\vec{r}$ is the reference point (from origin) and $\vec{r}'$ the charge (from origin). 
+
+### Monopole and dipole terms
+
+At large $\vec{r}$, a charge distribution just looks like a net charge (like an exoplanet). Thus, the **monopole moment** $Q$ is just the net charge:
+$$
+\begin{aligned}
+	Q \equiv \int\rho\;d\tau \qquad \qquad V_\text{mon}(\vec{r}) = \frac{1}{4\pi\epsilon_0}\frac{Q}{r}
+\end{aligned}
+$$
+The **dipole moment** $\vec{p}$ describes the individual distribution of charges:
+$$
+ \vec{p} = \sum_{i=1}^n q_i \vec{r_i}' \equiv \int \vec{r}' \rho(\vec{r'})\;d\tau'\qquad \qquad V_\text{dip}(\vec{r}) = \frac{1}{4\pi\epsilon_0} \frac{\vec{p}}{r^2}
+$$
+> $\vec{r}'$ points from the origin to some *charge distribution*. $\vec{r}$ is from the origin to some *reference point*. 
+
+### Origin of coordinates
+
+Changing the origin will never change the monopole moment $Q$, but *will* change the dipole moment $\vec{p}$ *as long as* the total charge $Q\neq0$.
+
+> **For example**: if our system has $+q$ and $-q$ as its point distribution, $Q=+q+(-q)=0$ and the dipole moment is origin-independent. 
+
+---
+
+> **Electric field of moments**: the electric field is defined as $E=-\nabla V$. 
+> 
+> To find the electric field i.e. caused by the dipole moment, find the voltage term for that dipole moment, then take the negative gradient of it. 
