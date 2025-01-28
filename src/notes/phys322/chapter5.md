@@ -1,6 +1,6 @@
 # Chapter 5 - Magnetostatics
 
-> Reference "*Introduction to Electrodynamics (5e)*" by David Griffiths.
+> Reference "*Introduction to Electrodynamics*" (5e) by David Griffiths.
 
 ---
 
