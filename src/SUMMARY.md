@@ -2,6 +2,8 @@
 
 [Welcome](welcome.md)
 
+# PHYS 322 Notes
+- [Chapter 5 - Magnetostatics](notes/phys322/chapter5.md)
 # PHYS 321 Notes
 
 - [Chapter 1 - Relevant Mathematics](notes/phys321/chapter1.md)
