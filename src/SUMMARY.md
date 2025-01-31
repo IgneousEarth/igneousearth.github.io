@@ -2,7 +2,12 @@
 
 [Welcome](welcome.md)
 
+# PHYS 228 Notes
+
+- [Chapter 14 - Complex Variable Functions](notes/phys228/chapter14.md)
+
 # PHYS 322 Notes
+
 - [Chapter 5 - Magnetostatics](notes/phys322/chapter5.md)
 - [Chapter 6 - Magnetic Fields in Matter](notes/phys322/chapter6.md)
 # PHYS 321 Notes
