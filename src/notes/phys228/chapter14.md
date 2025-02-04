@@ -34,9 +34,9 @@ A function $f(z)$ is **analytic** in a region of the complex plane if it has a *
 
 For some analytic function $f(z)$, the derivative is defined as
 $$
-f'(z) = \frac{df}{dz} = \lim_{\Delta z\rightarrow 0} \frac{\Delta f}{\Delta z}
+f'(z) = \frac{df}{dz} = \lim_{\Delta z\rightarrow 0} \frac{\Delta f}{\Delta z} = \lim_{\Delta z \rightarrow 0} \frac{f(z+\Delta z)-f(z)}{\Delta z}
 $$
-where $\Delta f = f(z+\Delta z) - f(z)$ and $\Delta z = \Delta x + i\Delta y$. Note also some definitions:
+where $\Delta z = \Delta x + i\Delta y$. Note also some definitions:
 
 - A **regular point** of $f(z)$ is a point at which $f(z)$ is analytic.
 - A **singular point** / **singularity** of $f(z)$ is a point at which $f(z)$ is not analytic. 
@@ -92,7 +92,7 @@ Some relevant theorems about analytic functions:
 >
 > **Note**: this means we can find solutions of Laplace's equation just by taking the real or imaginary parts of an analytic function of $z$. 
 
-# Contour Integrals
+## Contour Integrals
 
 Some additional theorems of analytic functions involve contour integrals - or path integrals in the complex plane. 
 
@@ -104,7 +104,7 @@ Some additional theorems of analytic functions involve contour integrals - or pa
 > $$ f(a) = \frac{1}{2\pi i} \oint_C \frac{f(z)}{z-a}\;dz $$
 > If $f(z)$ is given on the boundary of a region ($C$), then this integral gives the value of $f(z=a)$ at any point $a$ within $C$. 
 
-# Laurent Series
+## Laurent Series
 
 Laurent series are able to represent complex functions $f(z)$ as power series, which include terms of negative degrees.
 

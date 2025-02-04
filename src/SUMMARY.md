@@ -4,6 +4,7 @@
 
 # PHYS 228 Notes
 
+- [Chapter 8 - Differential Equations](notes/phys228/chapter8.md)
 - [Chapter 14 - Complex Variable Functions](notes/phys228/chapter14.md)
 
 # PHYS 322 Notes

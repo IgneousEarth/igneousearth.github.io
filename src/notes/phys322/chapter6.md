@@ -61,6 +61,8 @@ For a paramagnet, perhaps suspended above a solenoid, the magnetization would be
 
 **Note**: both diamagnetism and paramagnetism are quite *weak* compared to, for instance, ferromagnetism, and so are often neglected in experimental calculations. 
 
+---
+
 # Field of a Magnetized Object
 
 For some single dipole, the magnetic vector potential is
@@ -83,3 +85,118 @@ $$
 > This means we needn't integrate all the infinitesimal dipoles, but rather just determine the **bound currents** $\vec{J}_b$ and $\vec{K}_b$ and find the field they produce. 
 
 **Note**: $\nabla \cdot \vec{J}_b = 0$ 
+
+
+---
+# Auxiliary Field $H$
+
+> The **auxiliary field** $H$ is, in a sense, *the* magnetic field since, it represents the real-world field we'd observe - including both the magnetic flux field $\vec{B}$ *and* magnetism $\vec{M}$. 
+
+The **free current** is the current composed of moving free charges $\vec{J}_f$ (often caused by a battery or other current). The bound current $\vec{J}_b$ is caused by magnetization. The **total current** is then the free-charge-current plus the magnetized current (or bound current). 
+$$
+\vec{J} = \vec{J}_b+\vec{J}_f
+$$
+Ampère's law can be then written as
+
+$$
+\begin{align}
+\frac{1}{\mu_0}(\vec{\nabla}\times \vec{B}) &= \vec{J} \\
+&\equiv \vec{J}_f+\vec{J}_b \\
+&= \vec{J}_f+(\vec{\nabla}\times \vec{M})
+\end{align}
+$$
+We can simplify by moving both curls to the left
+$$
+\vec{\nabla}\times \left( \frac{1}{\mu_0}\vec{B}- \vec{M} \right) = \vec{J}_f
+$$
+This curl grouping is called the **auxiliary field** $\vec{H}$.
+$$
+\vec{H} = \frac{1}{\mu_0}\vec{B} - \vec{M}
+$$
+![](images/chapter6/bmh.png)
+Ampère's law becomes
+$$
+\vec{\nabla} \times \vec{H} = \vec{J}_f \qquad \oint \vec{H}\cdot d\vec{l} = I_{f_\text{enc}}
+$$
+where $I_{f_\text{enc}}$ is the *free* current passing through the Ampèrian loop. 
+
+> We see $\vec{H}$ when looking at a magnetometer. $\vec{B}$ is difficult to isolate unless we know both the exact amount of current and/or the magnetic properties of the material, such that we can evaluate $\vec{M}$.
+### Note / warning:
+
+$\vec{H}$, though more physically relevant in some ways, is harder to calculate:
+
+- It has a non-zero divergence
+$$
+\vec{\nabla} \cdot \vec{H} = -\vec{\nabla}\cdot \vec{M}
+$$
+- It cannot be calculated without knowing the material type
+
+## Symmetries
+
+$$
+H^\perp_\text{above} - H^\perp_\text{below} = -(M^\perp_\text{above} - M^\perp_\text{below})
+$$
+$$
+\vec{H}^\|_\text{above} - \vec{H}^\|_\text{below} = \vec{K}_f\times\hat{n}
+$$
+If you know the material type, this can be more helpful than the corresponding $\vec{B}$ boundary conditions
+$$
+B^\perp_\text{above} - B^\perp_\text{below} = 0
+$$
+$$\vec{B}^\|_\text{above} - \vec{B}^\|_\text{below} = \mu_0(\vec{K}\times\hat{n})$$
+
+
+--- 
+# Linear & Nonlinear Media
+
+**Linear media** are those for which $\vec{M}$ is *linearly proportional* to the magnetic field, $\vec{B}$. 
+
+This is the case for most materials, which tend to be either  paramagnetic (odd # of electrons) or diamagnetic (even # of electrons), and the proportionality is
+$$
+\vec{M} = \chi_m\vec{H}
+$$
+$\chi_m$ (chi) is the **magnetic susceptibility** of a substance, and is:
+- Positive for paramagnets.
+- Negative for diamagnets.
+- Dimensionless. 
+- Typically around $10^{-5}$.
+
+![](images/chapter6/mag_suscept.png)
+
+Therefore
+$$
+\vec{B} = \mu_0(\vec{H}+\vec{M}) = \mu_0(1+\chi_m)\vec{H}
+$$
+Thus, $\vec{B}\propto \vec{H}$, and
+$$\vec{B} = \mu\vec{H}$$where $\mu=\mu_0(1+\chi_m)$ is the **permeability** of a material. 
+
+> $\mu_0$ (the permeability of *free space*) is the case when $\chi_m=0$.
+
+## Nonlinear media (ferromagnetism)
+
+Ferromagnets require *no* external fields to sustain the magnetization, with each magnetic dipole pointing in the same direction as its neighbors.
+
+*However* - this "pointing" only occurs in small patches called **domains**, with each domain cancelling the others out (usually), so not all iron devices are fully magnetic.
+
+![](images/chapter6/mag_domains.png)
+
+However, each domain will *expand* when placed in a sufficiently powerful magnetic field.
+<center>
+
+<img src="images/chapter6/moving_magnetic_domains.gif">
+
+</center>
+
+From [Wikipedia](https://commons.wikimedia.org/wiki/File:Moving_magnetic_domains_by_Zureks.gif): *"Moving domain walls in a grain of silicon steel caused by an increasing external magnetic field in the 'downward' direction, observed in a Kerr microscope. White areas are domains with magnetization directed up, dark areas are domains with magnetization directed down."*
+
+If the field is strong enough such that one domain dominates, the iron becomes *saturated*. However, too-large domains are inherently *unstable* and will collapse into smaller fields without the presence of a large field, though the similar polarity will be present in each domain, so the iron remains magnetized until other fields affect it to go back to individual domains. 
+
+---
+
+### Ferromagnet design
+
+Wrap a coil of wire around the iron to be magnetized, then run a current $I$ through it to generate a $\vec{B}$ field. As $I$ increases, the domain boundaries move until they reach the saturation point. 
+![](images/chapter6/saturation.png)
+If we turn off the current, the permanent magnet remains. If we, however, run $-I$ through the coil, we reverse the effect, as shown above, known as a **hysteresis loop**. 
+
+> Ferromagnetic "history" may also be reset by increasing the temperature of the iron to 770$^\circ$ C, the **Curie point** - above this, iron also behaves more like a paramagnet. 
