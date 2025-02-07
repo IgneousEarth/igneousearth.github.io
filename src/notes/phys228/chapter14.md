@@ -2,6 +2,10 @@
 
 > Reference "*Mathematical Methods in the Physical Sciences*" 3e by Mary L. Boas.
 
+---
+
+
+
 We can represent a complex function (those including $i=\sqrt{-1}$) by $z$:
 $$
 \begin{align}
