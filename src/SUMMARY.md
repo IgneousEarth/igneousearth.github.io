@@ -6,6 +6,7 @@
 
 - [Chapter 8 - Differential Equations](notes/phys228/chapter8.md)
 - [Chapter 14 - Complex Variable Functions](notes/phys228/chapter14.md)
+- [Fourier Transforms](notes/phys228/fourier.md)
 
 # PHYS 322 - E&M 2
 
