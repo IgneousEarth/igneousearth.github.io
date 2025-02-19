@@ -12,10 +12,12 @@
 
 - [Chapter 5 - Magnetostatics](notes/phys322/chapter5.md)
 - [Chapter 6 - Magnetic Fields in Matter](notes/phys322/chapter6.md)
+- [Chapter 7 - Electrodynamics](notes/phys322/chapter7.md)
+- [Useful equations](notes/phys322/equations.md)
 # PHYS 321 - E&M 1
 
 - [Chapter 1 - Relevant Mathematics](notes/phys321/chapter1.md)
-- [Chapter 2 - Electrodynamics](notes/phys321/chapter2.md)
+- [Chapter 2 - Electrostatics](notes/phys321/chapter2.md)
 - [Chapter 3 - Potentials](notes/phys321/chapter3.md)
 
 # PHYS 225 - Intro to Quantum

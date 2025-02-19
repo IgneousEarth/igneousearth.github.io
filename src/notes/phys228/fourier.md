@@ -25,7 +25,7 @@ Visually, this GIF from the [Wikipedia article on Fourier series](https://en.wik
 
 Let $f(x)$ be the function and $g(\alpha)$ its Fourier coefficients. The associated **Fourier transforms** are
 $$
-f(x) = \int_{-\infty}^{\infty} g(\alpha) e^{i\alpha x}\;dx
+f(x) = \int_{-\infty}^{\infty} g(\alpha) e^{i\alpha x}\;d\alpha
 $$
 $$
 g(\alpha) = \frac{1}{2\pi} \int_{-\infty}^\infty f(x)e^{-i\alpha x}\;dx

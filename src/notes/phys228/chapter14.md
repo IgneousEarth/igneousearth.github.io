@@ -77,7 +77,7 @@ Thus, $f(z) = |z|^2$ is *not* analytic.
 Some relevant theorems about analytic functions:
 
 > **Theorem I**: if $f(z)=u(x,y)+iv(x,y)$ is analytic in a region, then in the region
-> $$ \frac{\partial u}{\partial y} = \frac{\partial v}{\partial y}\qquad \frac{\partial v}{\partial x} = -\frac{\partial u}{\partial y} $$
+> $$ \frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}\qquad \frac{\partial v}{\partial x} = -\frac{\partial u}{\partial y} $$
 > these are the *Cauchy-Riemann conditions*. 
 
 > **Theorem II**: if $u(x,y)$ and $v(x,y)$ (and their partial derivatives w.r.t. $x$ and $y$) are both:
@@ -124,3 +124,5 @@ Some properties of $b_n$:
 2. If $b_n\neq 0$ but all terms after $b_{n+m}=0$, $f(z)$ has a "pole of order" $n$ at $z=z_0$. If $n=1$ (i.e. $b_1\neq 0$, $b_{n>1}=0$), $f(z)$ has a "simple pole". 
 3. If all $b_n\neq 0$, $f(z)$ has an "essential singularity" at $z=z_0$. 
 4. The coefficient $b_1$ is the "residue" of $f(z)$ at $z=z_0$. 
+
+# Residue Theorem

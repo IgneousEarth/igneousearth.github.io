@@ -92,7 +92,13 @@ $$
 
 > The **auxiliary field** $H$ is, in a sense, *the* magnetic field since, it represents the real-world field we'd observe - including both the magnetic flux field $\vec{B}$ *and* magnetism $\vec{M}$. 
 
-The **free current** is the current composed of moving free charges $\vec{J}_f$ (often caused by a battery or other current). The bound current $\vec{J}_b$ is caused by magnetization. The **total current** is then the free-charge-current plus the magnetized current (or bound current). 
+The **free current** is the current composed of moving free electrons $\vec{J}_f$ (often caused by a battery or other current). 
+
+The **bound current** $\vec{J}_b$ results from the magnetic polarization (magnetization) of individual electrons into dipoles - Griffiths represents each dipole as tiny current loops. Individually, the current loop of each individual atom tend to cancel one another out, except at the *boundary* where there are no adjacent atoms - thus the bound current density $\vec{J}_b$ represents a current around the boundary of the surface (see [this image](images/chapter6/bound-current.png)).
+
+> "It is a peculiar kind of current, in the sense that no single charge makes the whole trip - on the contrary, each charge moves only in a tiny loop within a single atom. Nevertheless, the net effect is a macroscopic current flowing over the surface of the magnetized object." - *Griffiths* 
+
+The **total current density** is then the free-charge-current density plus the magnetized current density (or bound current). 
 $$
 \vec{J} = \vec{J}_b+\vec{J}_f
 $$
@@ -172,7 +178,14 @@ $$\vec{B} = \mu\vec{H}$$where $\mu=\mu_0(1+\chi_m)$ is the **permeability** of a
 
 > $\mu_0$ (the permeability of *free space*) is the case when $\chi_m=0$.
 
-## Nonlinear media (ferromagnetism)
+> $\chi_m$ is *dimensionless*.
+
+To calculate $\vec{M}$ in terms of $\vec{B}$ and $\chi_m$:
+$$
+\vec{M} = \frac{1}{\mu_0}\vec{B}\left(1 - \frac{1}{1+\chi_m}\right)
+$$
+
+## Ferromagnetism (nonlinear)
 
 Ferromagnets require *no* external fields to sustain the magnetization, with each magnetic dipole pointing in the same direction as its neighbors.
 
