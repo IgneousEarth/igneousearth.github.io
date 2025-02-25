@@ -228,4 +228,92 @@ given *one* solution $u(x)$, substitute
 $$
 y=u(x)v(x)
 $$
-into the differential equation and solve for $v(x)$. 
+into the differential equation and solve for $v(x)$.
+
+---
+
+# Dirac Delta Functions
+
+The **Dirac delta function** lets us model functions which change rapidly over a very short ($dt\approx 0$) period of time, such as *unit impulses* (a hammer strike, or the impact of an air particle). 
+
+![](images/chapter8/dirac-delta.svg)
+$d(mv)/dt$ at $t=t_1$ is mathematically infinite - not very useful at all. Instead, we can represent this increase by a **delta function**:
+$$
+\int_a^b f(t)\delta (t-t_0)dt = \begin{cases}
+	\;f(t_0), \qquad &a < t < b\\
+	\;0,\qquad &\text{otherwise}
+\end{cases}
+$$
+This is a *generalized function*, with the following properties:
+
+- Derivatives of the $\delta$ function turn into derivatives of $f(t)$:
+$$
+\int_{-\infty}^\infty f(t)\delta^{(n)} (x-a)\;dx  = (-1)^nf^{(n)}(a)
+$$
+- $\delta$ is an *operator*. Let $u'=\delta$.
+$$
+\begin{align}
+u'(x-a) &= \delta(x-a)\\
+u(x-a) &= \begin{cases}
+	\;1, \qquad x>a\\
+	\;0, \qquad x<a
+\end{cases}
+\end{align}
+$$
+
+Some other properties:
+$$
+\begin{align*}
+	\delta(-x) &= \delta(x)\\
+	\delta'(-x) &= -\delta'(x)\\
+	\delta(ax) &= \frac{1}{|a|}\delta(x)\\
+	\delta[(x-a)(x-b)] &= \frac{1}{|a-b|}[\delta(x-a)+\delta(x-b)]\\
+	\delta(f(x)) &= \sum_i\frac{1}{|f'(x_i)|}\delta(x-x_i)\qquad \text{if $f(x_i)=0$ and $f'(x_i)\neq 0$}
+\end{align*}
+$$
+$\delta$ can also work in two and three dimensions, and vectors:
+
+$$
+\begin{align*}
+	&\int\int f(x,y)\delta(x-x_0)\delta(y-y_0)\;dxdy = f(x_0,y_0)\\
+	&\int\int\int f(r,\theta,\phi)\delta(\vec{r}-\vec{r_0})\;d\tau = f(\vec{r_0}) = f(r_0,\theta_0,\phi_0)
+\end{align*}
+$$
+Finally, in three dimensions we have two useful operator equations:
+
+$$
+\begin{align*}
+	\vec{\nabla}\cdot \frac{\vec{e}_r}{r^2} = 4\pi \delta (\vec{r})\\
+	\nabla^2\frac{1}{r} = -4\pi\delta(\vec{r})
+\end{align*}
+$$
+
+---
+
+# Green's Function
+
+> I'm not confident in my knowledge of these - Boas 8.12 has more info on them, but the presented examples seem surprisingly complicated.
+>
+> As far as I can tell, just as for $A\vec{x}=\vec{b}$ there is some $A^{-1}$ (for invertible matrices) such that $\vec{x}=A^{-1}\vec{b}$, $G(t,t')$ is a similar transform for differential equations such that $y(t) = G(t,t')f(t)$ - see [this Stack Exchange post](https://math.stackexchange.com/questions/1735746/what-is-the-idea-behind-greens-function-what-does-it-do). 
+
+The [Wikipedia page on Green's function](https://en.wikipedia.org/wiki/Green%27s_function) says that, if $L$ is some differential operator, then
+
+- $G$ is the solution of the equation $LG = \delta$.
+- The solution of the IVP $Ly=f$ is the convolution $(G*f)$.
+
+From Boas: for some differential equation $y'' + \omega^2y = f(t)$, we can represent $f(t)$ as a sum of *unit impulses*:
+$$
+f(t) = \int_0^\infty f(t')\delta(t'-t)\;dt'
+$$
+For instance, if $f(t)$ models the air resistance on some oscillator, a unit impulse might be a single air particle bouncing off the oscillating object. 
+
+The differential equation in terms of unit impulses can be written with $G$ being a differential operator (like $D$ or $L$):
+$$
+	\frac{d^2}{dt^2} G(t,t') + \omega^2G(t,t') = \delta(t'-t)
+$$
+and the solution is
+$$
+y(t) = \int_0^\infty G(t,t')f(t')\;dt'
+$$
+
+> The [example on the Wikipedia page](https://en.wikipedia.org/wiki/Green's_function#Example) for Green's function provides (in my belief) a much better explanation than Boas does. 
