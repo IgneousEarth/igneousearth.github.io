@@ -5,6 +5,8 @@
 # PHYS 228 - Math Methods 2
 
 - [Chapter 8 - Differential Equations](notes/phys228/chapter8.md)
+- [Chapter 11 - Special Functions](notes/phys228/chapter11.md)
+%% - [Chapter 12 - Series Solutions to Diff. Eqns.](notes/phys228/chapter12.md)  %%
 - [Chapter 14 - Complex Variable Functions](notes/phys228/chapter14.md)
 - [Fourier Transforms](notes/phys228/fourier.md)
 

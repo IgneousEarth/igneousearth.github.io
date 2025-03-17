@@ -198,8 +198,6 @@ $$
 
 **Note**: if there are *several* terms on the right-hand-size, we can use *superposition* with each term to find $y_p=y_{p1}+y_{p2}+y_{p3}$.
 
----
-
 # Other Second-Order Equations
 
 Some other special second-order equations with methods to solve them are shown below.
@@ -230,8 +228,33 @@ y=u(x)v(x)
 $$
 into the differential equation and solve for $v(x)$.
 
----
+# Laplace Transforms
 
+Laplace transforms are way to solve differential equations - for some function $f(t)$,
+
+$$
+L(f) = \int_0^\infty f(t)e^{-pt}dt
+$$
+For example, if $f(t)=1$, $L(f) = \int_0^\infty 1*e^{-pt}dt = \frac{1}{p}$. This can be converted back into the original function by referencing a *Laplace transform table*.
+
+> Paul's Math Notes (of course) has a [wonderful table here](https://tutorial.math.lamar.edu/pdf/laplace_table.pdf). 
+
+To use it,
+
+1. Apply the Laplace transform to all terms in the differential equation (both left and right).
+2. Plug in initial conditions.
+3. Group $p$ (or $s$) terms and try to isolate terms on each side (all $p$ terms on one side, $Y=L(y)$ terms on the other).
+4. Use [table](https://tutorial.math.lamar.edu/pdf/laplace_table.pdf) to find inverse Laplace transform of $L(y)$.
+	- If there *isn't* an exact equivalent on the table, try using partial fraction decomposition or other techniques to separate into individual terms, and sum them.
+
+$$
+\begin{align*}
+y:&\qquad L(y)\\
+y':&\qquad L(y') = pL(y) - y_0\\
+y'':&\qquad L(y'') = p^2L(y) - y_0 - y_0'
+\end{align*}
+$$
+> For higher orders of differential equations, plug $y^{(n)}$ into $L(f)$ and use integration by parts. 
 # Dirac Delta Functions
 
 The **Dirac delta function** lets us model functions which change rapidly over a very short ($dt\approx 0$) period of time, such as *unit impulses* (a hammer strike, or the impact of an air particle). 
@@ -287,8 +310,6 @@ $$
 	\nabla^2\frac{1}{r} = -4\pi\delta(\vec{r})
 \end{align*}
 $$
-
----
 
 # Green's Function
 
