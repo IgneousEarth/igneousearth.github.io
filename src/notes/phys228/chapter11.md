@@ -68,3 +68,8 @@ $$
 $$
 
 Also, note that $\beta(p,q) = \beta(q,p)$.
+
+In terms of gamma functions,
+$$
+\beta(p,q) = \frac{\Gamma{(p)}\Gamma{(q)}}{\Gamma(p+q)}
+$$
