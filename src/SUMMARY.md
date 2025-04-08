@@ -2,11 +2,17 @@
 
 [Welcome](welcome.md)
 
+# CLAS 420 - Freedom in Rome / Mod.
+
+- [About](notes/clas420/about.md)
+- [Lecture 1](notes/clas420/lectures/lecture1.md)
+- [Lecture 2](notes/clas420/lectures/lecture2.md)
+- [Lecture 3](notes/clas420/lectures/lecture3.md)
+
 # PHYS 228 - Math Methods 2
 
 - [Chapter 8 - Differential Equations](notes/phys228/chapter8.md)
 - [Chapter 11 - Special Functions](notes/phys228/chapter11.md)
-%% - [Chapter 12 - Series Solutions to Diff. Eqns.](notes/phys228/chapter12.md)  %%
 - [Chapter 14 - Complex Variable Functions](notes/phys228/chapter14.md)
 - [Fourier Transforms](notes/phys228/fourier.md)
 
