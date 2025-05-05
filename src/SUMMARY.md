@@ -2,13 +2,21 @@
 
 [Welcome](welcome.md)
 
+
+# PHYS 226 - Particles & Symmetries
+
+- [Useful equations/links](notes/phys226/useful.md)
 # CLAS 420 - Freedom in Rome / Mod.
 
 - [About](notes/clas420/about.md)
 - [Lecture 1](notes/clas420/lectures/lecture1.md)
 - [Lecture 2](notes/clas420/lectures/lecture2.md)
 - [Lecture 3](notes/clas420/lectures/lecture3.md)
-
+- [Lecture 4](notes/clas420/lectures/lecture4.md)
+- [Lecture 5](notes/clas420/lectures/lecture5.md)
+- [Lecture 6](notes/clas420/lectures/lecture6.md)
+- [Patria potestas](notes/clas420/essays/patriapotestas.md)
+- [Lecture 9](notes/clas420/lectures/lecture9.md)
 # PHYS 228 - Math Methods 2
 
 - [Chapter 8 - Differential Equations](notes/phys228/chapter8.md)

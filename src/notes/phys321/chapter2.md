@@ -57,6 +57,13 @@ where $dq$ varies for our continuous distribution type (1D, 2D or 3D), such that
 - **Line**:  $dq = \lambda(\vec{r}')\;dl'$
 - **Area**: $dq = \sigma(\vec{r}')\;da'$
 - **Volume**: $dq = \rho(\vec{r}')\;d\tau'$
+
+Regarding the vectors,
+- $\vec{r}$ is from the origin to test point; above a disk, this might be be $z\hat{z}$.
+- $\vec{r}'$ is from the origin to infinitesimal elements; often $r\hat{r}$ or $x\hat{x}$.
+- $\vec{\mathcal{R}}=\vec{r}-\vec{r}'$, $\mathcal{R}^2 = |\mathcal{\vec{R}}|^2$.
+
+> The $\hat{R}$ will usually yield two unit vectors (i.e. $z\hat{z}-x\hat{x}$). Use two separate integrals with the same $dq$ element to handle. 
 # Divergence and Curl of Electrostatic Fields
 
 > Griffiths 2.2.
@@ -168,7 +175,7 @@ For a point charge $q$
 $$
 V(\vec{r}) = \frac{1}{4\pi\epsilon_0}\frac{q}{\mathcal{R}}
 $$
-> $\vec{r}$ is the reference point from origin, $\mathcal{R}$ from the point charge to the reference point $\vec{r}$.
+> $\vec{r}$ is the reference point from origin, $\mathcal{R}$ from the reference point $\vec{r}$ to the infinitesimal charge $\vec{r}'$. 
 
 For a set of point charges, we can use the principle of superposition:
 $$
@@ -183,9 +190,21 @@ and for a volume (to compute $V$ when we know $\rho$):
 $$
 V(\vec{r}) = \frac{1}{4\pi\epsilon_0} \int\frac{\rho(\vec{r}')}{\mathcal{R}}\;d\tau'
 $$
-> $\vec{r}'$ from origin to charge.
 
-**Note**: this is similar to the formula for electric field, but is missing $\hat{\mathcal{R}}$ - $V$ is a scalar quantity, directionless.
+**Note**: this is similar to the formula for electric field, but is missing $\hat{\mathcal{R}}$. $V$ is a scalar quantity, directionless.
+
+### Note on continuity
+
+For some surface, 
+
+- The normal component of $\vec{E}_\perp$ is *discontinuous* by some amount $\sigma/\epsilon_0$ at a boundary. 
+	- So, if the surface is *uncharged* ($\sigma=0$), $\vec{E}$ is continuous across the boundary.
+- The parallel component of $\vec{E}_{||}$ is continuous ($\vec{E}^{||}_\text{above}=\vec{E}^{||}_\text{below}$).
+Representing both,
+$$
+\vec{E}_\text{above} - \vec{E}_\text{below} = \frac{\sigma}{\epsilon_0}\hat{n}
+$$
+The electric potential $V$ is always continuous across any boundary (however the *gradient* of $V$ inherits the discontinuity in $\vec{E}$, since $\vec{E}=-\vec{\nabla}V$).
 
 ## Summary
 
@@ -235,13 +254,16 @@ $$
 
 ## Work in a Continuous Charge Distribution
 
-For a continuous charge distribution, we use our last equation for our point charge distribution system and replace the sum $\sum$ with an integral $\int$.
+For a continuous charge distribution, we use our last equation for our point charge distribution system and replace the sum $\sum$ with an integral $\int$. 
 $$
 W = \frac{1}{2}\int \rho V\;d\tau
 $$
+
+> **Note**: $V$ is not volume, but potential. This can be done via Gauss's law as well, see [this hyperphysics article](http://hyperphysics.phy-astr.gsu.edu/hbase/electric/potsph.html). 
+
 With a bit of mathematics, this is equivalent to
 $$
-W = \frac{\epsilon_0}{2} \int E^2\'d\tau
+W = \frac{\epsilon_0}{2} \int E^2d\tau
 $$
 # Conductors
 
