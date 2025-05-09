@@ -63,7 +63,7 @@ Following these conquests, Romans have a ridiculous amount of land and even more
 - This influx of land was predominantly given to the rich.
 - In 133, Tiberius and Gaius Gracchus (Gracci brothers) active. 
 
-> Most of our knowledge of this time is covered by **Appian of Alexandria** c. 141 AD, wrote the *Roman History* (24 books), generally held to be a good source re: the Gracci period and following. Plays close attention to the plight of the working class. 
+> Most of our knowledge of this time is covered by **Appian of Alexandria** c. 141 AD, wrote the *Roman History* (24 books), generally held to be a good source re: the Gracci period and following. Pays close attention to the plight of the working class. 
 
 In the decades preceding 133, many Roman small farms fell into disrepair as owners were sent off to war in far-off lands.
 - Roman army still mostly composed of conscripts rather than professional soldiers.

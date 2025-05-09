@@ -2,10 +2,27 @@
 
 [Welcome](welcome.md)
 
+# Projects
+
+- [Using the PIC16F88 as an I2C device](projects/pic16/pic16f88.md)
+- [Building an ASCOM frontend for the MRO](projects/f1-tcs/f1-tcs.md)
 
 # PHYS 226 - Particles & Symmetries
 
 - [Useful equations/links](notes/phys226/useful.md)
+
+# PHYS 321 - E&M 1
+
+- [Chapter 1 - Relevant Mathematics](notes/phys321/chapter1.md)
+- [Chapter 2 - Electrostatics](notes/phys321/chapter2.md)
+- [Chapter 3 - Potentials](notes/phys321/chapter3.md)
+- [Useful equations](notes/phys321/equations.md)
+# PHYS 322 - E&M 2
+
+- [Chapter 5 - Magnetostatics](notes/phys322/chapter5.md)
+- [Chapter 6 - Magnetic Fields in Matter](notes/phys322/chapter6.md)
+- [Chapter 7 - Electrodynamics](notes/phys322/chapter7.md)
+- [Useful equations](notes/phys322/equations.md)
 # CLAS 420 - Freedom in Rome / Mod.
 
 - [About](notes/clas420/about.md)
@@ -24,17 +41,6 @@
 - [Chapter 14 - Complex Variable Functions](notes/phys228/chapter14.md)
 - [Fourier Transforms](notes/phys228/fourier.md)
 
-# PHYS 322 - E&M 2
-
-- [Chapter 5 - Magnetostatics](notes/phys322/chapter5.md)
-- [Chapter 6 - Magnetic Fields in Matter](notes/phys322/chapter6.md)
-- [Chapter 7 - Electrodynamics](notes/phys322/chapter7.md)
-- [Useful equations](notes/phys322/equations.md)
-# PHYS 321 - E&M 1
-
-- [Chapter 1 - Relevant Mathematics](notes/phys321/chapter1.md)
-- [Chapter 2 - Electrostatics](notes/phys321/chapter2.md)
-- [Chapter 3 - Potentials](notes/phys321/chapter3.md)
 
 # PHYS 225 - Intro to Quantum
 
@@ -63,7 +69,3 @@
 - [05/24 - 05/25](mro/trips/may24may25.md)
 - [06/21 - 06/22](mro/trips/june21june22.md)
 - [07/11 - 07/15](mro/trips/jul11jul15.md)
-
-# Projects
-
-- [Using the PIC16F88 as an I2C device](projects/pic16/pic16f88.md)
