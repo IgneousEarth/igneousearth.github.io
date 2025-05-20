@@ -423,7 +423,7 @@ $$
 \ket{\frac{1}{2},\frac{1}{2}} = \ket{+}
 $$
 $$
-\ket{\frac{1}{2},-\frac{1}{2}} = \ket{+}
+\ket{\frac{1}{2},-\frac{1}{2}} = \ket{-}
 $$
 and in spin-1, 
 

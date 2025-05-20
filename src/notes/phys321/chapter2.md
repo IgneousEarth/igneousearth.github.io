@@ -179,7 +179,7 @@ $$
 
 For a set of point charges, we can use the principle of superposition:
 $$
-V(x,y,z) = \frac{1}{4\pi\epsilon_0} \left[ \frac{q}{\sqrt{x^2+y^2+(z-d)^2}} - \frac{q}{\sqrt{x^2+y^2+(z+d)^2}} \right]
+V(x,y,z) = \frac{1}{4\pi\epsilon_0} \left[ \frac{q}{\sqrt{x^2+y^2+(z-d)^2}} - \frac{q}{\sqrt{x^2+y^2+(z+d)^2}} \right] = \frac{1}{4\pi\epsilon_0}\sum_{i=1}^n\frac{q_i}{r_i}
 $$
 
 For a continuous distribution,
@@ -345,5 +345,8 @@ C = \frac{Q}{V} \equiv \frac{Q}{Ed} \equiv \epsilon_0\frac{A}{d}
 $$
 with units of **Farads** $(\text{F} = \frac{\text{C}}{\text{V}})$, usually expressed in $\mu \text{F}\;(10^{-6})$ or $p \text{F}\;(10^{-12})$. The **work** to go from one side to the other is
 $$
-W = \frac{1}{2}CV^2
+\begin{aligned}
+	W &= \frac{1}{2}CV^2\\
+	&= \frac{1}{2}\frac{Q^2d}{\epsilon_0 A}
+\end{aligned}
 $$
