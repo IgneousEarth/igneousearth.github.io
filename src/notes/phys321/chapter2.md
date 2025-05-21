@@ -175,11 +175,11 @@ For a point charge $q$
 $$
 V(\vec{r}) = \frac{1}{4\pi\epsilon_0}\frac{q}{\mathcal{R}}
 $$
-> $\vec{r}$ is the reference point from origin, $\mathcal{R}$ from the reference point $\vec{r}$ to the infinitesimal charge $\vec{r}'$. 
+> $\vec{r}$ is the reference point from origin, $\mathcal{R}$ from the reference point $\vec{r}$ to the infinitesimal charge $\vec{r}'$ (or reference point to point charge). 
 
 For a set of point charges, we can use the principle of superposition:
 $$
-V(x,y,z) = \frac{1}{4\pi\epsilon_0} \left[ \frac{q}{\sqrt{x^2+y^2+(z-d)^2}} - \frac{q}{\sqrt{x^2+y^2+(z+d)^2}} \right] = \frac{1}{4\pi\epsilon_0}\sum_{i=1}^n\frac{q_i}{r_i}
+V(x,y,z) = \frac{1}{4\pi\epsilon_0} \left[ \frac{q}{\sqrt{x^2+y^2+(z-d)^2}} - \frac{q}{\sqrt{x^2+y^2+(z+d)^2}} \right] = \frac{1}{4\pi\epsilon_0}\sum_{i=1}^n\frac{q_i}{\mathcal{R}_i}
 $$
 
 For a continuous distribution,
