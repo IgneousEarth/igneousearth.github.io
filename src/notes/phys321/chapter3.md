@@ -193,11 +193,19 @@ $$
 	V(\vec{r}) &= \frac{1}{4\pi\epsilon_0}\left[ \frac{1}{r}(\text{monopole moment}) + \frac{1}{r^2}(\text{dipole moment}) + \frac{1}{r^3}(\text{quadrupole moment})\ldots \right]
 \end{aligned}
 $$
+Thus, the monopole moment is $(1/r)$ stronger than the dipole moment, the dipole $1/r$ stronger than the quadrupole moment, and so on. 
+
 >Mathematically, it is
 > $$
 V(\vec{r}) = \frac{1}{4\pi\epsilon_0} \sum_{n=0}^\infty \frac{1}{r^{n+1}} \int (r')^n P_n(\cos\alpha)\rho(\vec{r}')\;d\tau'
 $$
 > where $\alpha$ is the angle between $\vec{r}$ and $\vec{r'}$, $\vec{r}$ is the reference point (from origin) and $\vec{r}'$ the charge (from origin). 
+
+
+
+> **Electric field of moments**: the electric field is defined as $E=-\nabla V$.
+>  
+> To find the electric field i.e. caused by the dipole moment, find the voltage term for that dipole moment, then take the negative gradient of it. 
 
 ### Monopole and dipole terms
 
@@ -218,9 +226,3 @@ $$
 Changing the origin will never change the monopole moment $Q$, but *will* change the dipole moment $\vec{p}$ *as long as* the total charge $Q\neq0$.
 
 > **For example**: if our system has $+q$ and $-q$ as its point distribution, $Q=+q+(-q)=0$ and the dipole moment is origin-independent. 
-
----
-
-> **Electric field of moments**: the electric field is defined as $E=-\nabla V$. 
-> 
-> To find the electric field i.e. caused by the dipole moment, find the voltage term for that dipole moment, then take the negative gradient of it. 
