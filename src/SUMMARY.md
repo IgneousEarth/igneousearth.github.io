@@ -1,6 +1,6 @@
 # Summary
 
-[Stuff](stuff.md)
+[Useful](notes/phys226/useful.md)
 
 # Projects
 

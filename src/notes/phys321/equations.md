@@ -10,10 +10,11 @@ Here are (most) of the equations I found useful in this class.
 
 | Thing        | Dimensional units       |
 | ------------ | ----------------------- |
-| $\epsilon_0$ | $$\frac{T^4I^2}{ML^3}$$ |
+| $\epsilon_0$ | $$T^4I^2M^{-1}L^{-3}$$  |
 | $E$          | $$\frac{ML}{T^3I}$$     |
 | $V$          | $$\frac{ML^2}{T^{3}I}$$ |
 | $F$          | $$\frac{ML}{T^2}$$      |
+| $C$          | $$M^{-1}L^{-2}T^4I^2$$  |
 # Electrostatics
 
 Coulomb's law (both $\vec{F}$ and $\vec{E}$)

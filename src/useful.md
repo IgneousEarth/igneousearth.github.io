@@ -1,4 +1,4 @@
-# Stuff
+# Useful stuff
 
 Here I'm putting useful commands, dotfiles and links to remember. 
 
@@ -9,7 +9,6 @@ Here I'm putting useful commands, dotfiles and links to remember.
 I love:
 - [Owls in Towels](https://owlsintowels.org/)
 - [Electron Band Structure In Germanium, My Ass](https://web.archive.org/web/20001031193257/http://www.cs.wisc.edu/~kovar/hall.html)
-- [Max Carr's PCT blog](https://pct.maxcarr.com/posts)
 
 
 ---
