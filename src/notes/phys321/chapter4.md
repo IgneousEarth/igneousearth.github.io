@@ -4,9 +4,9 @@
 
 ---
 
-This chapter looks at electric fields within solids, liquids, gasses and plasma. 
+This chapter looks at electric fields within solids, liquids, gasses and plasma - often, with the materiel not being conductors. 
 ## Polarization
 
 > Griffith's 4.1.
 
-Say we have some material within an $E$-field. Broadly, whatever the material is, it can be loosely 
+Say we have some material within an $E$-field. 
