@@ -1,6 +1,6 @@
 # Summary
 
-[Useful](useful.md)
+[Stuff](stuff.md)
 
 # Projects
 
@@ -34,6 +34,8 @@
 - [Lecture 6](notes/clas420/lectures/lecture6.md)
 - [Patria potestas](notes/clas420/essays/patriapotestas.md)
 - [Lecture 9](notes/clas420/lectures/lecture9.md)
+- [Lecture 12](notes/clas420/lectures/lecture12.md)
+- [Lecture 13](notes/clas420/lectures/lecture13.md)
 # PHYS 228 - Math Methods 2
 
 - [Chapter 8 - Differential Equations](notes/phys228/chapter8.md)

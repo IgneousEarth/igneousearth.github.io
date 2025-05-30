@@ -1,4 +1,4 @@
-# Useful
+# Stuff
 
 Here I'm putting useful commands, dotfiles and links to remember. 
 
