@@ -17,7 +17,7 @@ In an **electrostatic** system (no moving charges as opposed to an electrodynami
 Electrostatics simply takes into account distance and charge strength. Coulomb's law is
 
 $$
-\vec{F} = \frac{1}{4\pi\epsilon_0} \frac{qQ}{\mathbb{\mathcal{R}}^2}\hat{\mathbb{\mathcal{R}}}
+\vec{F} = \frac{1}{4\pi\epsilon_0} \frac{qQ}{\mathbb{\mathcal{R}}^2}\hat{\mathbb{\mathcal{R}}} \equiv \frac{1}{4\pi\epsilon_0}\frac{qQ}{\mathcal{R}^3}\vec{\mathcal{R}}
 $$
 > $\epsilon_0$ is the permittivity of free space ($\epsilon_0=8.85\times10^{-12}$ $\text{C}^2/\text{N}\cdot\text{m}^2)$ and $\mathcal{R}=\vec{r}-\vec{r}'$ (Griffith's script-r).
 
