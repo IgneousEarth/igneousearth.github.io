@@ -6,16 +6,17 @@ Here are (most) of the equations I found useful in this class.
 
 # Dimensional analysis
 
-> **Symbols**: [time](https://en.wikipedia.org/wiki/Time "Time") ($T$), [length](https://en.wikipedia.org/wiki/Length "Length") ($L$), [mass](https://en.wikipedia.org/wiki/Mass "Mass") ($M$), [electric current](https://en.wikipedia.org/wiki/Electric_current "Electric current") ($I$), [charge](https://en.wikipedia.org/wiki/Electric_charge)($Q = TI$), [energy](https://en.wikipedia.org/wiki/Energy) ($T^{-2}L^2M$)
+> **Symbols**: [time](https://en.wikipedia.org/wiki/Time "Time") (T), [length](https://en.wikipedia.org/wiki/Length "Length") (L), [mass](https://en.wikipedia.org/wiki/Mass "Mass") (M), [electric current](https://en.wikipedia.org/wiki/Electric_current "Electric current") (I), [charge](https://en.wikipedia.org/wiki/Electric_charge) (Q = TI), [energy](https://en.wikipedia.org/wiki/Energy) (T$^{-2}$L$^2$M)
 
-| Thing          | Dimensional units       |
-| -------------- | ----------------------- |
-| $\epsilon_0$   | $$T^4I^2M^{-1}L^{-3}$$  |
-| $1/\epsilon_0$ | $$T^{-4}I^{-2}ML^3$$    |
-| $E$            | $$\frac{ML}{T^3I}$$     |
-| $V$            | $$\frac{ML^2}{T^{3}I}$$ |
-| $F$            | $$\frac{ML}{T^2}$$      |
-| $C$            | $$M^{-1}L^{-2}T^4I^2$$  |
+| Thing          | Dimensional units      |
+| -------------- | ---------------------- |
+| $\epsilon_0$   | $$M^{-1}L^{-3}T^4I^2$$ |
+| $1/\epsilon_0$ | $$ML^3T^{-4}I^{-2}$$   |
+| $E$            | $$\frac{ML}{T^3I}$$    |
+| $V$            | $$ML^2T^{-3}I^{-1}$$   |
+| $F$            | $$MLT^{-2}$$           |
+| $C$            | $$M^{-1}L^{-2}T^4I^2$$ |
+| $p$            | $$LTI$$                |
 
 > Wikipedia's [dimensional analysis page](https://en.wikipedia.org/wiki/Dimensional_analysis#Simple_cases) has some other good simple cases. 
 # Electrostatics
