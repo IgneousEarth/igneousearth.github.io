@@ -9,6 +9,7 @@
 
 # PHYS 226 - Particles & Symmetries
 
+- [Final review](notes/phys226/review.md)
 - [Useful equations/links](notes/phys226/useful.md)
 
 # PHYS 321 - E&M 1
@@ -16,6 +17,7 @@
 - [Chapter 1 - Relevant Mathematics](notes/phys321/chapter1.md)
 - [Chapter 2 - Electrostatics](notes/phys321/chapter2.md)
 - [Chapter 3 - Potentials](notes/phys321/chapter3.md)
+- [Chapter 4 - Electric Fields in Matter](notes/phys321/chapter4.md)
 - [Useful equations](notes/phys321/equations.md)
 # PHYS 322 - E&M 2
 
