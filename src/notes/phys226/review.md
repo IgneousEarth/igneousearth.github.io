@@ -1,3 +1,5 @@
+
+> Mostly particles and symmetries. *Probably* ~2 questions on special relativity in the context of particle physics. 18 multiple choice, 2 long answer.
 # Special relativity
 
 - $E^2 = p^2+m^2$
