@@ -44,7 +44,7 @@ The net force on a dipole in a uniform field is zero as seen in the first image.
 $$
 \vec{F} = (\vec{p}\cdot \vec{\nabla})\vec{E}
 $$
-Lastly, the potential energy of a dipole in an electric field is
+The potential energy of a dipole in an electric field is
 $$
 U = -\vec{p}\cdot \vec{E}
 $$
@@ -66,4 +66,35 @@ $$
 Since the potential for an individual dipole is 
 $$
 V(\vec{r}) = \frac{1}{4\pi\epsilon_0}\frac{\vec{p}}{\mathcal{R}^2}\hat{\mathcal{R}} = \frac{1}{4\pi\epsilon_0} \frac{\vec{p}}{|\vec{r}-\vec{r}'|^3}(\vec{r}-\vec{r'})
+$$
+The electric potential for the *entire* object with polarization $\vec{P}$ is
+$$
+V(\vec{r}) = \frac{1}{4\pi\epsilon_0}\int \frac{\vec{P}(\vec{r}')\cdot\hat{\mathcal{R}}}{\mathcal{R}^2}d\tau'
+$$
+With *surface* and *volume* **bound charge densities** of
+$$
+\sigma_b = \vec{P}\cdot\hat{n}\qquad \rho_b = -\vec{\nabla}\cdot\vec{P}
+$$
+We can rewrite the potential of our whole polarized object in terms of these densities:
+$$
+V(\vec{r}) = \frac{1}{4\pi\epsilon_0}\left[\oint_S \frac{\sigma_b}{\mathcal{R}}\;da' + \int_V\frac{\rho_b}{\mathcal{R}}\;d\tau' \right]
+$$
+> The net field is just the sum of the fields produced by the bound surface and volume charges. 
+
+> $\vec{P}\cdot \hat{n} = P\cos\theta$, where $\theta$ is the angle between $\vec{P}$ and $\vec{n}$. 
+
+## Physical interpretation of bound charge
+
+> Griffiths'4.2.2 does an excellent job explaining this. I'm rehashing for my own education, but it's a good read for more detail.
+
+Say we have a long string of dipoles, as we might in a polarized dielectric in some field $\vec{E}$. The head of one dipole will cancel the tail of its neighbor, *except* at the ends, so that:
+
+![](images/chapter4/string-dipoles.svg)
+No one electron makes the whole trip - but the magnitude of the $\Delta -$ in some field will be matched by $\Delta +$, such that it's almost conductor-like - in a *uniform field*, we see only accumulations of bound charge on the surface, such that
+$$
+\sigma_b = \vec{P}\cdot \hat{n} \equiv P\cos\theta \quad \text{(for some oblique surface)}
+$$
+If, however, the polarization is *non-uniform*, then we'll see accumulations of bound charge *within* the object, as well as on the surface, 
+$$
+\rho_b = -\vec{\nabla}\cdot \vec{P}
 $$

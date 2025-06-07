@@ -12,7 +12,7 @@ Here are (most) of the equations I found useful in this class.
 | -------------- | ---------------------- |
 | $\epsilon_0$   | $$M^{-1}L^{-3}T^4I^2$$ |
 | $1/\epsilon_0$ | $$ML^3T^{-4}I^{-2}$$   |
-| $E$            | $$\frac{ML}{T^3I}$$    |
+| $E$            | $$MLT^{-3}I^{-1}$$     |
 | $V$            | $$ML^2T^{-3}I^{-1}$$   |
 | $F$            | $$MLT^{-2}$$           |
 | $C$            | $$M^{-1}L^{-2}T^4I^2$$ |
