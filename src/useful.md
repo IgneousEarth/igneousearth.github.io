@@ -21,6 +21,11 @@ To convert a bunch of images from one format to another via `ImageMagick`:
 mogrify -format jpg *.heic
 ```
 
+To enable scientific notation in `qalc`
+```bash
+set exp # set exp 0 to disable
+```
+
 ---
 
 # Dotfiles
