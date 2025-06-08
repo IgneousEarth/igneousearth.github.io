@@ -7,7 +7,7 @@
 This chapter looks at electric fields within matter that aren't necessarily conductors - i.e.most matter in the universe. 
 # Polarization
 
-> Griffith's 4.1.
+> Griffith's 4.1
 
 If we place a neutral atom in an electric field, the net force on it is zero (as it is uncharged) - *however*, the positively-charged nucleus is pushed along into the field, while the negatively charged electron cloud is pulled down into the field. 
 
@@ -53,7 +53,7 @@ $$
 
 # The Field of a Polarized Object
 
-> Griffiths 4.2.
+> Griffiths 4.2
 
 In the presence of an external electric field, the individual atoms of a given material will become polarized, leading to a lot of little baby dipoles, all pointing in the direction of the applied field. 
 
@@ -98,3 +98,41 @@ If, however, the polarization is *non-uniform*, then we'll see accumulations of 
 $$
 \rho_b = -\vec{\nabla}\cdot \vec{P}
 $$
+
+---
+
+# The Electric Displacement
+
+> Griffiths 4.3
+
+Most materials aren't perfect conductors or perfect insulators. Conductors have free flowing electrons $(\rho_f)$, while insulators have exclusively bound charges $(\rho_b)$ - a normal dielectric will have *both* free flowing and bound charges, such that
+$$
+\rho = \rho_b + \rho_f
+$$
+Let the **displacement field** take into account the fields of the polarization field and electric field, such that
+$$
+\vec{D} = \epsilon_0\vec{E} + \vec{P}
+$$
+Gauss's law for $\vec{D}$ is
+$$
+	\vec{\nabla}\cdot\vec{D} = \rho - \rho_b = \rho_f\qquad \oint \vec{D}\cdot d\vec{a} = Q_{f_\text{enc}}
+$$
+> We only have control over free charge - bound charge is a consequence of the properties of the material itself. 
+
+> Though Gauss's law has a parallel for $\vec{D}$, Coulomb's law *does not*. 
+
+The curl of $\vec{D}$ is
+$$
+\vec{\nabla} \times \vec{D} = \vec{\nabla}\times\vec{P}
+$$
+
+## Boundary conditions
+
+For a given dielectric, the boundary conditions are:
+$$
+	D^\perp_\text{above}-D^\perp_\text{below} = \sigma_f\qquad \vec{D}^\parallel_\text{above}-\vec{D}^\parallel_\text{below} = \vec{P}^\parallel_\text{above} -\vec{P}^\parallel_\text{beow}
+$$
+
+> Note that since the curl of $\vec{E}$ is zero $(\vec{\nabla}\times\vec{E}=0$),
+> $$\vec{E}^\parallel_\text{above}-\vec{E}^\parallel_\text{below}=0$$
+
