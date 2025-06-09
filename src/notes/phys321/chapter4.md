@@ -176,3 +176,54 @@ $$\vec{D} = \frac{Q}{4\pi r^2}\hat{r}\qquad r > a$$
 $$
 	V = -\int_\infty^0 \vec{E}\cdot d\vec{l}
 $$
+> **Example 4.6:** parallel plate capacitor filled with dielectric material of dielectric constant $\epsilon_r$, what effect does this have on capacitance?
+
+- Dielectric will reduce $\vec{E}$, and hence $V$, by factor of $1/\epsilon_r$
+- Since $C=Q/V$, capacitance *increased* by $1/\epsilon_r$: $C=\epsilon_r C_\text{vac}$
+
+---
+
+## Boundaries of linear dielectrics
+
+In a homogenous isotropic (uniform) linear dielectric, $\rho_b \propto \rho_f$:
+$$
+\rho_b = -\left( \frac{\chi_e}{1+\chi_e}\right)\rho_f
+$$
+The boundary conditions are (for $\vec{E}$):
+$$
+\epsilon_\text{above}E^\perp_\text{above}-\epsilon_\text{below}E^\perp_\text{below} = \sigma_f
+$$
+In terms of $V$:
+$$
+\epsilon_\text{above}\frac{\partial V_\text{above}}{\partial n}-\epsilon_\text{below}\frac{\partial V_\text{below}}{\partial n} = -\sigma_f
+$$
+> The potential above and below the boundary is continuious.
+> $$V_\text{above} = V_\text{below}$$
+
+## Energy in dielectric systems
+
+The work to fill (charge) a capacitor is
+$$
+W = \frac{1}{2}CV^2
+$$
+If a capacitor is filled with dielectric, the capacitance increases by $C=\epsilon_rC_\text{vac}$; thus the work does as well. 
+$$
+	W = \epsilon_rW_\text{vac}
+$$
+The total work done (derivation in Griffiths 4.4.3) to fill the capacitor from 0 to its final configuration is
+$$
+W = \frac{1}{2}\int \vec{D}\cdot \vec{E}\;d\tau
+$$
+> Work is still "energy to assemble a system". 
+
+## Forces on dielectrics
+
+Dielectrics are attracted *into* fields just as conductors are, since bound charge tends to accumulate near the free charge of opposite sign.
+
+In a capacitor with a partially-inserted dielectric, this might look like this: 
+![](images/chapter4/fringing-region.svg)
+Fringing fields are "notoriously difficult to calculate" (agreed!) - see Griffiths 4.4.4 for a method to deal with them, the result of which is
+$$
+\vec{F} = -\frac{\epsilon_0\chi_e w}{2d}V^2\hat{x}
+$$
+where $w$ is the width of the plates (for a square plate, $w=l$).

@@ -88,7 +88,7 @@ $$
 
 # Del operator
 
-Due to unit vector and coordinate conversions, $\vec{\nabla}$ has different representations as applied in divergences as compared to normal functions. 
+Due to unit vector and coordinate conversions, $\vec{\nabla}$ has [different representations](https://en.wikipedia.org/wiki/Del_in_cylindrical_and_spherical_coordinates) as applied in divergences as compared to normal functions. 
 
 | Coordinate system | Gradient of $f$                                                                                                                                                                      | Dot product with $\vec{A}$                                                                                                                                                                                             |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
