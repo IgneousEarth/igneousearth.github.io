@@ -85,3 +85,13 @@ $$
 | 3   | $$\frac{1}{2}(5x^3-3x)$$         |
 | 4   | $$\frac{1}{8}(35x^4-30x^2+3)$$   |
 | 5   | $$\frac{1}{8}(63x^5-70x^3+15x)$$ |
+
+# Del operator
+
+Due to unit vector and coordinate conversions, $\vec{\nabla}$ has different representations as applied in divergences as compared to normal functions. 
+
+| Coordinate system | Gradient of $f$                                                                                                                                                                      | Dot product with $\vec{A}$                                                                                                                                                                                             |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cartesian         | $$\vec{\nabla}f = \frac{\partial f}{\partial x}\hat{i}+\frac{\partial f}{\partial y}\hat{j} + \frac{\partial f}{\partial z}\hat{k}$$                                                 | $$\vec{\nabla}\cdot \vec{A} = \frac{\partial A_x}{\partial x}+\frac{\partial A_y}{\partial y} + \frac{\partial A_z}{\partial z}$$                                                                                      |
+| Cylindrical       | $$\vec{\nabla}f = \frac{\partial f}{\partial r}\hat{r}+\frac{1}{r}\frac{\partial f}{\partial \phi}\hat{\phi} + \frac{\partial f}{\partial z}\hat{z}$$                                | $$\vec{\nabla}\cdot \vec{A} = \frac{1}{r}\frac{\partial A_x}{\partial x}+\frac{\partial A_y}{\partial y} + \frac{\partial A_z}{\partial z}$$                                                                           |
+| Spherical         | $$\vec{\nabla}f = \frac{\partial f}{\partial r}\hat{r}+\frac{1}{r}\frac{\partial f}{\partial \theta}\hat{\theta} + \frac{1}{r\sin\theta}\frac{\partial f}{\partial \phi}\hat{\phi}$$ | $$\vec\nabla\cdot\vec{A} = \frac{1}{r^2}\frac{\partial}{\partial r}(r^2A_r) + \frac{1}{r\sin\theta}\frac{\partial}{\partial \theta}(A_\theta\sin\theta) + \frac{1}{r\sin\theta}\frac{\partial A_\phi}{\partial \phi}$$ |

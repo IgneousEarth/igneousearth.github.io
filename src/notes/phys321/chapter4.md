@@ -19,7 +19,7 @@ $$
 $$
 $\alpha$ is the **atomic polarizability** and varies from atom to atom. 
 
-> If the electric field is strong enough, the $e^-$ cloud will be ripped away from the nucleus and the atom will become ionized.
+> If the electric field is strong enough, the $e^-$ cloud will be ripped away from the nucleus and the atom will become ionized. Coulomb's law determines both.
 
 >Molecules become more complicated, since they're a few individual atoms coupled together - CO$_2$ for instance has different polarizabilities parallel or orthogonal to its axis ($\vec{p}=\alpha_\perp \vec{E}_\perp + \alpha_\parallel \vec{E}_\parallel$), so for molecules, a *polarization tensor* might be more useful.
 >$$
@@ -79,13 +79,16 @@ We can rewrite the potential of our whole polarized object in terms of these den
 $$
 V(\vec{r}) = \frac{1}{4\pi\epsilon_0}\left[\oint_S \frac{\sigma_b}{\mathcal{R}}\;da' + \int_V\frac{\rho_b}{\mathcal{R}}\;d\tau' \right]
 $$
-> The net field is just the sum of the fields produced by the bound surface and volume charges. 
+> The *net potential* is just the *sum* of the potentials produced by the bound surface and volume charges. 
 
-> $\vec{P}\cdot \hat{n} = P\cos\theta$, where $\theta$ is the angle between $\vec{P}$ and $\vec{n}$. 
+> $\vec{P}\cdot \hat{n} = P\cos\theta$, where $\theta$ is the angle between $\vec{P}$ and $\vec{n}$. $r\cos\theta=z$ in spherical.
+
+To calculate the **electric field** caused by polarization, use
+$$
+\vec{E} = -\vec{\nabla}V
+$$
 
 ## Physical interpretation of bound charge
-
-> Griffiths'4.2.2 does an excellent job explaining this. I'm rehashing for my own education, but it's a good read for more detail.
 
 Say we have a long string of dipoles, as we might in a polarized dielectric in some field $\vec{E}$. The head of one dipole will cancel the tail of its neighbor, *except* at the ends, so that:
 
@@ -105,19 +108,19 @@ $$
 
 > Griffiths 4.3
 
-Most materials aren't perfect conductors or perfect insulators. Conductors have free flowing electrons $(\rho_f)$, while insulators have exclusively bound charges $(\rho_b)$ - a normal dielectric will have *both* free flowing and bound charges, such that
+Most materials aren't perfect conductors or perfect insulators. Conductors have free flowing electrons $(\rho_f)$, while insulators have exclusively bound charges $(\rho_b)$ - a normal dielectric will have *both* free and bound charges, such that
 $$
 \rho = \rho_b + \rho_f
 $$
 Let the **displacement field** take into account the fields of the polarization field and electric field, such that
 $$
-\vec{D} = \epsilon_0\vec{E} + \vec{P}
+\vec{D} = \epsilon_0\vec{E}_\text{net} + \vec{P}
 $$
 Gauss's law for $\vec{D}$ is
 $$
 	\vec{\nabla}\cdot\vec{D} = \rho - \rho_b = \rho_f\qquad \oint \vec{D}\cdot d\vec{a} = Q_{f_\text{enc}}
 $$
-> We only have control over free charge - bound charge is a consequence of the properties of the material itself. 
+> We only have control over free charge - bound charge is a consequence of the properties of the material itself. Free charges themselves generate a field. 
 
 > Though Gauss's law has a parallel for $\vec{D}$, Coulomb's law *does not*. 
 
@@ -136,3 +139,40 @@ $$
 > Note that since the curl of $\vec{E}$ is zero $(\vec{\nabla}\times\vec{E}=0$),
 > $$\vec{E}^\parallel_\text{above}-\vec{E}^\parallel_\text{below}=0$$
 
+---
+
+# Linear dielectrics
+
+> Griffiths 4.4
+
+For *linear substances*, the polarization is linearly proportional to the total electric field:
+$$
+\vec{P} = \epsilon_0\chi_e\vec{E}_\text{net}
+$$
+> $\chi_e$ is the **electric susceptibility** of the medium (dimensionless), with
+> $$\epsilon = \epsilon_0(1+\chi_e)$$
+> being the **permittivity** of the material (with $\chi_e=0$ in vacuum, $\epsilon_0$ the permittivity of free space). A unit-less version is the dielectric constant, $e_r = \epsilon/\epsilon_0$. 
+
+The displacement field in linear media is thus
+$$
+\begin{align}
+	\vec{D} &= \epsilon_0\vec{E}+\vec{P}\\
+	&= \epsilon_0\vec{E}+\epsilon_0\chi_e\vec{E}\\
+	&= \epsilon_0(1+\chi_e)\vec{E}\\
+	&=\epsilon\vec{E}_\text{net}
+\end{align}
+$$
+
+---
+
+**Notes on examples**
+
+> **Example 4.5:** conducting sphere of radius $a$ and charge $Q$ surrounded by linear dielectric of radius $b$ and permittivity $\epsilon$, find potential at the center.
+
+- The conducting sphere of charge $Q$ is our enclosed free charge, so
+$$\vec{D} = \frac{Q}{4\pi r^2}\hat{r}\qquad r > a$$
+- Inside the sphere, $\vec{E}=\vec{P}=\vec{D}=\vec{0}$
+- Integral to find potential is (with reference to infinity):
+$$
+	V = -\int_\infty^0 \vec{E}\cdot d\vec{l}
+$$
