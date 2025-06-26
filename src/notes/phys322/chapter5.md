@@ -20,18 +20,29 @@ $$
 $$
 
 ![](images/chapter5/current-dir.svg)
-**Todo**: cyclotron motion?
 
-> **Note**: magnetic fields *do no work*. 
+> Magnetic forces themselves do no work:
 > $$
  dW_\text{mag} = \vec{F}_\text{mag}\cdot d\vec{l} = Q(\vec{v}\times\vec{B})\cdot \vec{v}\;dt = 0
 $$
-> The objects that generate the $B$-fields do work; but it's an apparently subtle distinction that the textbook does not expand on yet.
+> This means that magnetic forces can change the *direction* of a charged particle in motion but cannot speed up or slow them down.
+
+## Cyclotron motion
+
+Cyclotrons are varieties of modern particle accelerators - **cyclotron motion** is the motion a charged particle has moving around some central axis:
+
+![](images/chapter5/cyclotron-motion.svg)
+and adheres to the **cyclotron formula**:
+$$
+QvB = m\frac{v^2}{R}\qquad \text{or} \qquad p = QBR
+$$
+with some **cyclotron frequency** given by
+$$\omega = \frac{QB}{m}$$
+> If the particle has some velocity component parallel to the $B$-axis, $v_\parallel$, the circle will look more like a helix (see [this visualization](https://www.researchgate.net/figure/Cyclotron-motion-of-an-ion-along-a-uniform-and-steady-magnetic-field-line-Image-credit_fig1_261874512)), since there is no parallel component along the axis of the Lorentz force law (for this scenario). 
 
 ## Current
 
-Current is some *charge* per *unit time* through some cross-sectional area, defined such that $1\;\text{ampere} = 1\;\text{Coulomb}/1\;\text{second}$. 
-
+Current is some *charge* per *unit time* through some cross-sectional area, defined such that $$1\;\text{ampere} = 1\;\text{Coulomb}/1\;\text{second}$$
 If we had some line charge of $\lambda$ Coulombs traveling at velocity $v$, $I=\lambda v$. In cases where we're not just along a straight line, $\vec{v}$ is a vector and as such current is too:
 $$
 \vec{I} = \lambda\vec{v}
