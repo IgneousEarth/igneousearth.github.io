@@ -27,7 +27,7 @@
 - [Useful equations](notes/phys322/equations.md)
 # CLAS 420 - Freedom in Rome / Mod.
 
-- [About](notes/clas420/about.md)
+- [Course](notes/clas420/course.md)
 - [Lecture 1](notes/clas420/lectures/lecture1.md)
 - [Lecture 2](notes/clas420/lectures/lecture2.md)
 - [Lecture 3](notes/clas420/lectures/lecture3.md)

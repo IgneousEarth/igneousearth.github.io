@@ -151,7 +151,7 @@ $$
 $$
 > $\chi_e$ is the **electric susceptibility** of the medium (dimensionless), with
 > $$\epsilon = \epsilon_0(1+\chi_e)$$
-> being the **permittivity** of the material (with $\chi_e=0$ in vacuum, $\epsilon_0$ the permittivity of free space). A unit-less version is the dielectric constant, $e_r = \epsilon/\epsilon_0$. 
+> being the **permittivity** of the material (with $\chi_e=0$ in vacuum, $\epsilon_0$ the permittivity of free space). A unit-less version is the dielectric constant, $\epsilon_r = \epsilon/\epsilon_0$. 
 
 The displacement field in linear media is thus
 $$
@@ -197,7 +197,7 @@ In terms of $V$:
 $$
 \epsilon_\text{above}\frac{\partial V_\text{above}}{\partial n}-\epsilon_\text{below}\frac{\partial V_\text{below}}{\partial n} = -\sigma_f
 $$
-> The potential above and below the boundary is continuious.
+> The potential above and below the boundary is continuous.
 > $$V_\text{above} = V_\text{below}$$
 
 ## Energy in dielectric systems
