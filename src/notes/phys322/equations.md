@@ -24,6 +24,7 @@ $$
 | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------- |
 | Solenoid running along $+z$, $n$ turns per length | $$\vec{B}_\text{sol} = \begin{cases} \mu_0nI\hat{z}\quad& \text{inside}\\ 0\quad &\text{outside} \end{cases}$$ | 5.59           |
 | Long straight wire of radius $R$                  | $$\vec{B}_\text{wire} = \frac{\mu_0 I}{2\pi r}\hat{\phi}$$                                                     | 5.39           |
+| Center $z$ above a circular loop of radius $R$    | $$\vec{B}_\text{loop} = \frac{\mu_0 I}{2}\frac{R^2}{(R^2+z^2)^{3/2}}\hat{z}$$                                  | ex. 5.6        |
 
 # Magnetism
 

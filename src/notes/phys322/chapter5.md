@@ -57,7 +57,9 @@ for a constant current $I$.
 
 If we have some charges flowing across some $dl$ on a surface, or across some area $dA$ on a volume, we represent them with **surface current density** $\vec{K}$ and **volume current density** $\vec{J}$. 
 
-![](images/chapter5/surf-vol-current.png)
+![](images/chapter5/surf-vol-current.svg)
+> $dl_\perp$ and $da_\perp$ are *both* perpendicular to the direction of current flow.
+
 Similar to a line charge, if our surface has density $\sigma$ (or $\rho$ for a volume charge) and charges move at velocity $\vec{v}$:
 $$
 \vec{K} = \sigma\vec{v}\qquad \vec{J} = \rho\vec{v}
