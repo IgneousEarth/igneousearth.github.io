@@ -20,3 +20,19 @@ Highs are generally associated with calm weather, lows with clouds and stormy we
 ![](images/fronts.png)
 
 Fronts tend to be in low-pressure troughs. 
+
+# Time
+
+Meteorologists (like astronomers) use UTC (also known as GMT or Z) as a baseline time zone. 
+$$\text{UTC} = \text{PST}+8\;\text{hr}$$
+or $+7\;\text{hr}$ if in PDT. 
+
+> In the United States, daylight savings time starts the **second Sunday of March** and lasts to the **first Sunday in November**, and transitions at local midnight. 
+
+# Weather station models
+
+Weather station models will generally take the form of this chart:
+
+![](images/weather-station-model.png)
+
+Generally, these models won't be independent entities or charts, but might be seen in surface plots (or synoptic charts) such as shown [at the start of this page](#Lesson%201%20-%20Fronts,%20Highs,%20Lows). 

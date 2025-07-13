@@ -22,9 +22,13 @@ Magnetic dipoles will experience some torque $N$ in an applied field, where
 $$
 \vec{N} = \vec{m}\times\vec{B}
 $$
-and $m$ is the magnetic dipole moment. For paramagnetic materials (odd electrons), $m$ will be roughly in the same direction as the applied $\vec{B}$-field.
+and $m$ is the magnetic dipole moment, defined as 
+$$
+\vec{m} = I\int d\vec{a} = I\vec{a}
+$$
+where $\vec{a}$ is the "vector area" of the loop, which is just the enclosed area if the loop is flat. The direction of $\vec{a}$ follows the right-hand rule.
 
-For a current loop, $m=Iab$ where $a,b$ are side lengths. 
+![](images/chapter6/current_loops.svg)
 
 > In a uniform field the net force on the dipole is zero, though this is not the case for nonuniform fields. 
 

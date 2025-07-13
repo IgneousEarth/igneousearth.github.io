@@ -1,6 +1,6 @@
 # Useful Equations
 
-Here are (most) of the equations I found useful in this class. 
+Here are some of the equations and ideas I found useful in this class. 
 
 ---
 
@@ -20,11 +20,12 @@ $$
 $$
 > $\vec{r}$ from origin to test point, $\vec{r}'$ origin to test charge $d\vec{l}$, $\vec{R}=\vec{r}-\vec{r}'$ (Griffiths' script-r)
 
-| Scenario (current $I$)                            | Field                                                                                                          | Griffiths ref. |
-| ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------- |
-| Solenoid running along $+z$, $n$ turns per length | $$\vec{B}_\text{sol} = \begin{cases} \mu_0nI\hat{z}\quad& \text{inside}\\ 0\quad &\text{outside} \end{cases}$$ | 5.59           |
-| Long straight wire of radius $R$                  | $$\vec{B}_\text{wire} = \frac{\mu_0 I}{2\pi r}\hat{\phi}$$                                                     | 5.39           |
-| Center $z$ above a circular loop of radius $R$    | $$\vec{B}_\text{loop} = \frac{\mu_0 I}{2}\frac{R^2}{(R^2+z^2)^{3/2}}\hat{z}$$                                  | ex. 5.6        |
+| Scenario (current $I$)                            | Field                                                                                                          | Griffiths ref.     |
+| ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ------------------ |
+| Solenoid running along $+z$, $n$ turns per length | $$\vec{B}_\text{sol} = \begin{cases} \mu_0nI\hat{z}\quad& \text{inside}\\ 0\quad &\text{outside} \end{cases}$$ | 5.59               |
+| Long straight wire of radius $R$                  | $$\vec{B}_\text{wire} = \frac{\mu_0 I}{2\pi r}\hat{\phi}$$                                                     | 5.39               |
+| Center $z$ above a circular loop of radius $R$    | $$\vec{B}_\text{loop} = \frac{\mu_0 I}{2}\frac{R^2}{(R^2+z^2)^{3/2}}\hat{z}$$                                  | ex. 5.6            |
+| Center of a circular loop, $z=0$                  | $$B_{\text{circle}} = \frac{\mu_0 I}{2R}$$                                                                     | derived from above |
 
 # Magnetism
 
