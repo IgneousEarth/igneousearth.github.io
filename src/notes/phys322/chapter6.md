@@ -22,7 +22,7 @@ Magnetic dipoles will experience some torque $N$ in an applied field, where
 $$
 \vec{N} = \vec{m}\times\vec{B}
 $$
-and $m$ is the magnetic dipole moment, defined as 
+and $m$ is the magnetic dipole moment, defined (for current loops) as
 $$
 \vec{m} = I\int d\vec{a} = I\vec{a}
 $$

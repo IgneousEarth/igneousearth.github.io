@@ -150,6 +150,11 @@ Note that Ampère's law *only* works for
 3. Infinite solenoids
 4. Toroids (see Griffiths Ex. 5.10)
 
+For surface current densities $\vec{K}$ (with $d\vec{l}$ perpendicular to $\vec{K}$) and volume current densities $\vec{J}$ (with $d\vec{a}$ similarly, see above).
+$$
+I_\text{enc} = \int \vec{K}\cdot d\vec{l} = \int \vec{J}\cdot d\vec{A}
+$$
+
 # Magnetic Vector Potential $\vec{A}$
 
 > Magnetic vector potential $\vec{A}$ is the magnetostatics equivalent to electric potential $V$. 
