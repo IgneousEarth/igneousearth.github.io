@@ -86,3 +86,50 @@ $$B^\parallel_\text{inside} - B^\parallel_\text{outside} = \mu_0K\qquad \vec{B}_
 
 - Vector potential $\vec{A}$ is also continuous across a boundary. Its difference w.r.t. $\partial n$ is however also proportional to surface current density:
 $$\frac{\partial\vec{A}_\text{inside}}{\partial n}-\frac{\partial\vec{A}_\text{outside}}{\partial n} = -\mu_0\vec{K}$$
+
+---
+# Magnetism
+
+Every current loop has a **magnetic dipole moment**
+$$m = I\int d\vec{a} = I\vec{a}$$
+> $\vec{a}$ is the vector area of some Ampèrean loop.
+
+![](images/chapter6/mag_moment.PNG)
+
+In a magnetic field $\vec{B}$, dipoles *torque* instead of move:
+$$\vec{N} = \vec{m}\times\vec{B}$$
+
+## Magnetization
+
+Magnetization $\vec{M}$ is the dipole moment per unit area of some material. 
+
+- **Paramagnets**: magnetization *parallel* (same direction) as applied $\vec{B}$, odd # electrons.
+- **Diamagnets**: magnetization *antiparallel* (opposite direction) to applied $\vec{B}$, even # electrons.
+- **Ferromagnets**: magnetization persists even after the magnetic field has been removed.
+
+> $\vec{M}$ is an "average" over a wildly complex set of infinitesimal dipoles and "smooths out" the dipole into a macroscopic view, useful for calculations.
+
+> In a nonuniform field, generally paramagnets will be attracted into the field, diamagnets repelled away. 
+
+For some magnetization, we tend to have **bound** charge densities now (which are electrons not free to scoot around). 
+$$\vec{J_b} = \vec{\nabla}\times\vec{M}\qquad \vec{K_b} = \vec{M}\times\hat{n}$$
+> $\vec{J_b}=0$ in a *uniform* magnetic field. Also, note $\vec{M}=0$ outside of a material.
+
+- We can calculate $\vec{B}$ due to $\vec{M}$ by using Amp's law with $\vec{J}_b$ and $\vec{K_b}$ assuming symmetry. 
+- This is also where magnetic vector potential really shines. See [equations](equations.md) for more on this.
+
+# Auxiliary Field
+
+This represents the "real world" field we see on an object - the sum of an object's magnetic field and magnetization, where
+$$\vec{H} = \frac{1}{\mu_0}\vec{B} - \vec{M}$$
+If we take the curl of this whole thing, we have corresponding charge densities for each.
+$$\vec{\nabla}\times{\vec{H}} = \vec{J_f} \qquad \frac{1}{\mu_0}(\vec{\nabla}\times{\vec{B}}) = \vec{J}_\text{net} \qquad \vec{\nabla}\times{\vec{M}} = \vec{J_b}$$
+Thus, 
+$$\vec{J_f} = \vec{J}_\text{net} - \vec{J}_b$$
+**Note on divergence**: since $\vec{\nabla}\cdot\vec{B}=0$,
+$$\vec{\nabla}\times\vec{H} = -\vec{\nabla}\cdot\vec{M}$$
+
+We can also use Ampère's law with $\vec{H}$. Since $\vec{\nabla}\times\vec{H}=\vec{J}_f$,
+$$
+\oint \vec{H}\cdot d\vec{l} = I_{f_\text{enc}}
+$$
