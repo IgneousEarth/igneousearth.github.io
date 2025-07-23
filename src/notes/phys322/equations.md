@@ -24,6 +24,8 @@ $$
 | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ------------------ |
 | Solenoid running along $+z$, $n$ turns per length | $$\vec{B}_\text{sol} = \begin{cases} \mu_0nI\hat{z}\quad& \text{inside}\\ 0\quad &\text{outside} \end{cases}$$ | 5.59               |
 | Long straight wire of radius $R$                  | $$\vec{B}_\text{wire} = \frac{\mu_0 I}{2\pi r}\hat{\phi}$$                                                     | 5.39               |
+| Center of a 4-sided square loop                   | $$B_4=\frac{\sqrt{2}}{\pi}\frac{\mu_0I}{R}$$                                                                   | pr. 5.8            |
+| Center of an $n$-sided polygon                    | $$B_n = n\frac{\mu_0I}{2\pi R}\sin\frac{\pi}{n}$$                                                              | pr. 5.8            |
 | Center $z$ above a circular loop of radius $R$    | $$\vec{B}_\text{loop} = \frac{\mu_0 I}{2}\frac{R^2}{(R^2+z^2)^{3/2}}\hat{z}$$                                  | ex. 5.6            |
 | Center of a circular loop, $z=0$                  | $$B_{\text{circle}} = \frac{\mu_0 I}{2R}$$                                                                     | derived from above |
 
@@ -83,28 +85,6 @@ $$
 	\vec{A}(\vec{r}) = \frac{\mu_0}{4\pi}\left[\int_V \frac{\vec{J}_b(\vec{r}')}{R}d\tau'  + \oint_S \frac{\vec{K}_b(\vec{r}')}{R}da' \right] \qquad& \text{mag. obj. J \& K}
 \end{align*}
 $$
-# Electrodynamics
-
-Current density $\vec{J}$:
-$$
-\begin{align*}
-	\vec{J} = \sigma \vec{f}\qquad\\
-	\vec{J} = \sigma \vec{E}\qquad &\text{if $\vec{v}$ small}\\
-	E = \frac{V}{d}\qquad&\text{between 2 plates}\qquad&\\
-	P = VI = I^2R\qquad&\text{Joule heating law}
-\end{align*}
-$$
-> $I$ is current, $\vec{J}$ current density, $I=J*A$. 
-
-Electromotive force $\epsilon$:
-$$
-\begin{align*}
-	\epsilon = \oint \vec{f}\cdot d\vec{l} = \oint \vec{f}_s
-	\cdot d\vec{l} \qquad&\\
-	\vec{f} = \vec{f}_s+\vec{E}\qquad&\\
-	
-\end{align*}
-$$
 
 # Dimensional analysis
 
@@ -128,9 +108,10 @@ $$
 | Cylindrical       | $$\vec{\nabla}f = \frac{\partial f}{\partial r}\hat{r}+\frac{1}{r}\frac{\partial f}{\partial \phi}\hat{\phi} + \frac{\partial f}{\partial z}\hat{z}$$                                | $$\vec{\nabla}\cdot \vec{A} = \frac{1}{r}\frac{\partial (rA_r)}{\partial r}+\frac{1}{r}\frac{\partial A_\phi}{\partial \phi} + \frac{\partial A_z}{\partial z}$$                                                       |
 | Spherical         | $$\vec{\nabla}f = \frac{\partial f}{\partial r}\hat{r}+\frac{1}{r}\frac{\partial f}{\partial \theta}\hat{\theta} + \frac{1}{r\sin\theta}\frac{\partial f}{\partial \phi}\hat{\phi}$$ | $$\vec\nabla\cdot\vec{A} = \frac{1}{r^2}\frac{\partial}{\partial r}(r^2A_r) + \frac{1}{r\sin\theta}\frac{\partial}{\partial \theta}(A_\theta\sin\theta) + \frac{1}{r\sin\theta}\frac{\partial A_\phi}{\partial \phi}$$ |
 
-| **Coordinate system** | **Cross product with $\vec{A}$**                                                                                                                                                                                                                                                           |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Cartesian             | $$\vec{\nabla}\times\vec{A} = \left\|\begin{matrix}\hat{i} & \hat{j} & \hat{k}\\\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z}\\A_x & A_y & A_z\end{matrix}\right\|$$                                                                             |
-| Cylindrical           | $$\vec{\nabla}\times\vec{A} = \left\|\begin{matrix}\hat{r} & \hat{\phi} & \hat{z}\\\frac{\partial}{\partial r} & \frac{1}{r}\frac{\partial}{\partial \phi} & \frac{\partial}{\partial z}\\A_r & A_\phi & A_z\end{matrix}\right\|$$                                                         |
-| Spherical             | $$\vec{\nabla}\times\vec{A} = \frac{1}{r\sin\theta}\left\|\begin{matrix}\hat{r} & r\hat{\theta} & r\sin\theta\hat{\phi}\\\frac{\partial}{\partial r} & \frac{1}{r}\frac{\partial}{\partial \phi} & \frac{\partial}{\partial z}\\A_r & rA_\theta & r\sin\theta A_\phi\end{matrix}\right\|$$ |
+---
 
+| **Coordinate system** | **Cross product with $\vec{A}$**                                                                                                                                                                                                                                                             |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cartesian             | $$\vec{\nabla}\times\vec{A} = \left\|\begin{matrix}\hat{i} & \hat{j} & \hat{k}\\\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z}\\A_x & A_y & A_z\end{matrix}\right\|$$                                                                               |
+| Cylindrical           | $$\vec{\nabla}\times\vec{A} = \frac{1}{r} \left\|\begin{matrix}\hat{r} & r\hat{\phi} & \hat{z}\\\frac{\partial}{\partial r} & \frac{\partial}{\partial \phi} & \frac{\partial}{\partial z}\\A_r & rA_\phi & A_z\end{matrix}\right\|$$                                                        |
+| Spherical             | $$\vec{\nabla}\times\vec{A} = \frac{1}{r^2\sin\theta}\left\|\begin{matrix}\hat{r} & r\hat{\theta} & r\sin\theta\hat{\phi}\\\frac{\partial}{\partial r} & \frac{1}{r}\frac{\partial}{\partial \phi} & \frac{\partial}{\partial z}\\A_r & rA_\theta & r\sin\theta A_\phi\end{matrix}\right\|$$ |

@@ -18,8 +18,8 @@
 
 - [Chapter 5 - Magnetostatics](notes/phys322/chapter5.md)
 - [Chapter 6 - Magnetic Fields in Matter](notes/phys322/chapter6.md)
-- [Chapter 7 - Electrodynamics](notes/phys322/chapter7.md)
 - [Useful equations](notes/phys322/equations.md)
+- [Midterm 1 study guide](notes/phys322/midterm1-sg.md)
 
 # PHYS 226 - Particles & Symmetries
 
