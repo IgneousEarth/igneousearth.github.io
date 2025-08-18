@@ -61,3 +61,24 @@ Thus, there will always be *two* dimensions orthogonal to the direction of propa
 $$\hat{n} = \cos\theta\:\hat{x} + \sin\theta\:\hat{y}$$
 Most waves can therefore be considered a superposition of two waves: one horizontally polarized, one vertically, depending on your axis orientation.
 $$g(z,t) = g_1(x,t)\cos(\theta)\hat{x} + g_2(z,t)\sin(\theta)\hat{y}$$
+
+---
+
+# Electromagnetic Waves
+
+Derived from Maxwell's equations, 
+$$\nabla^2\vec{E} = \mu\epsilon \frac{\partial^2\vec{E}}{\partial t^2}\qquad \nabla^2\vec{B} =  \mu\epsilon \frac{\partial^2\vec{B}}{\partial t^2}$$
+> In a vacuum (outside of any material), replace $\mu\rightarrow\mu_0$ and $\epsilon\rightarrow \epsilon_0$. 
+
+Both satisfy the **wave equation in three dimensions**:
+$$\nabla^2 f = \frac{1}{v^2}\frac{\partial^2 f}{\partial t^2}$$
+The velocity is given by
+$$v = \frac{1}{\sqrt{\mu\epsilon}}$$
+> In vacuum, $v = \frac{1}{\sqrt{\mu_0\epsilon_0}} = c$, the speed of light.  
+
+## Monochromatic Plane Waves
+
+"Monochromatic" implies the frequency $\omega$ is constant. 
+
+If these waves are traveling in a single direction $z$ and have no dependence on $x$ or $y$, then they're called **plane waves** (fields uniform over every plane perpendicular to direction of propagation). 
+
