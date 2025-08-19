@@ -19,6 +19,7 @@
 - [Chapter 5 - Magnetostatics](notes/phys322/chapter5.md)
 - [Chapter 6 - Magnetic Fields in Matter](notes/phys322/chapter6.md)
 - [Chapter 7 - Electrodynamics](notes/phys322/chapter7.md)
+- [Chapter 8 - Conservation Laws](notes/phys322/chapter8.md)
 - [Chapter 9 - Electromagnetic Waves](notes/phys322/chapter9.md)
 - [Useful equations](notes/phys322/equations.md)
 
