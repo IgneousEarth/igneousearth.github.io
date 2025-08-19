@@ -81,4 +81,3 @@ $$v = \frac{1}{\sqrt{\mu\epsilon}}$$
 "Monochromatic" implies the frequency $\omega$ is constant. 
 
 If these waves are traveling in a single direction $z$ and have no dependence on $x$ or $y$, then they're called **plane waves** (fields uniform over every plane perpendicular to direction of propagation). 
-
