@@ -49,6 +49,7 @@ T_{xy} &= \epsilon_0(E_xE_y)+\frac{1}{\mu_0}(B_xB_y)
 \end{align}$$
 
 The stress tensor can be written in two ways, both equivalent - the double arrow is used to indicate it's a vector with more than one index. 
+
 $$T_{ij} \equiv \overleftrightarrow{T}$$
 The dot product of the tensor can only operate under one index:
 $$(T_{ij}\cdot \vec{a})_j = \sum_{i={x,y,z}} T_{ji}a_i$$
@@ -59,6 +60,7 @@ $$
 +\frac{1}{\mu_0}\left[ (\vec{\nabla}\cdot\vec{B})B_j+(\vec{B}\cdot\vec{\nabla})B_j-\frac{1}{2}\vec{\nabla}_jB^2 \right]
 \end{aligned}
 $$
+
 ---
 
 The **electromagnetic force per unit volume** $\vec{f}$ can be written
@@ -71,6 +73,7 @@ $$
 $$
 In the *static* case (i.e. $\vec{E}\times\vec{B}$ does not vary with time),
 $$\vec{F} = \oint_S T_{ij}\cdot d\vec{a}$$
+
 ---
 
 In an applied context, $T_{ij}$ is the force per unit area, in the $i$th direction, acting on an element of surface in the $j$th direction. 
