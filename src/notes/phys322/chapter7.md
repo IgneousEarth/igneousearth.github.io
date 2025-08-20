@@ -40,7 +40,7 @@ $$P = VI = I^2R$$
 
 # Electromotive Force
 
-Now, regarding the EMF. **Electromotive force** (or electromotance) is *not* a force. Rather, it is the integral over the force per unit charge, or the forces driving each electron in a material, and is defined as 
+Now, regarding the EMF. **Electromotive force** (or electromotance) is *not* a force. Rather, it is the integral over the **force per unit charge**, or the forces driving each electron in a material, and is defined as 
 $$\epsilon = \oint \vec{f}\cdot d\vec{l}$$
 $\vec{f} = \vec{f_s}+\vec{E}$, where $\vec{f_s}$ is the 'source' or 'driving' force on each charge, usually a battery or something to create some potential difference $V$, while $\vec{E}$ "smooths out" the conductor such that we have an equal distribution of electrons everywhere (no buildups). 
 
@@ -60,10 +60,10 @@ When we move a wire through a magnetic field, we get a motional EMF.
 
 From the Lorentz force law of a single charge moving through a magnetic field,
 $$\vec{f}_\text{mag} = q(\vec{v}\times\vec{B})$$
-Thus,
+EMF is force per unit charge $\vec{f}/q$, so
 $$\begin{align}
 \epsilon &= \oint \vec{f}_\text{mag} \cdot d\vec{l}\\
-&= \oint q(\vec{v}\times{\vec{B}})\cdot d\vec{l}
+&= \oint (\vec{v}\times{\vec{B}})\cdot d\vec{l}
 \end{align}$$
 This is fine, but can get complicated to calculate (as evidenced by homework 6). A much simpler way to calculate $\epsilon$ of some loop is via **Faraday's law**, where
 $$\epsilon = -\frac{d\Phi}{dt}$$
@@ -81,7 +81,7 @@ Flux is really just the amount of magnetic field passing through some loop.
 
 # Induction & Faraday's Law
 
-Michael Faraday noted some key facets about induction - mainly:
+Michael Faraday noted some key things about induction - mainly:
 
 > A changing magnetic field induces an electric field.
 
