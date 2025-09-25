@@ -54,4 +54,14 @@ size = 12
 ```
 </details>
 
+<details>
+<summary>
+Last command in Fish (!!)
+</summary>
 
+Put in `~/.config/fish/config.fish`.
+```
+function last_history_item; echo $history[1]; end
+abbr -a !! --position anywhere --function last_history_item
+```
+</details>
