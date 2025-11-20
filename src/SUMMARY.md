@@ -7,6 +7,9 @@
 - [Using the PIC16F88 as an I2C device](projects/pic16/pic16f88.md)
 - [Building an ASCOM frontend for the MRO](projects/f1-tcs/f1-tcs.md)
 
+# Other notes
+
+- [Internal combustion engines](notes/combustion_engines/engines.md)
 # PHYS 321 - E&M 1
 
 - [Chapter 1 - Relevant Mathematics](notes/phys321/chapter1.md)
