@@ -16,9 +16,14 @@ I love:
 
 # Commands
 
-To convert a bunch of images from one format to another via `ImageMagick`: 
+To convert a bunch of images from one format to another via `ImageMagick`
 ```bash
 mogrify -format jpg *.heic
+```
+
+To convert some audio files from one sample/depth to another via `sox`
+```bash
+mkdir converted; for flac in *.[Ff][Ll][Aa][Cc]; do sox -S "$flac" -R -G -b 16 converted/"$flac" rate -v -L 44100 dither; done
 ```
 
 To enable scientific notation in `qalc`
