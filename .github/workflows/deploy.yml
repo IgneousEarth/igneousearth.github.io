@@ -24,7 +24,7 @@ jobs:
           override: true
       - name: Install latest mdbook and katex
         run: |
-          cargo install mdbook
+          cargo install mdbook@0.4.48
           cargo install mdbook-katex
       # TODO when more time, configure below to decrease configuration time. 
       # - name: Install latest mdbook
